@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en" data-type="software" data-radius="soft" data-ground="sage" data-buttons="pill" data-motion>
+<html lang="nl" data-type="software" data-radius="soft" data-ground="sage" data-buttons="pill" data-motion>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pricing: Starter free, Pro from €1,500 a month | Moiz AI</title>
-<meta name="description" content="Moiz AI pricing: Starter is free with one user, Pro is €1,500 a month with unlimited users, Enterprise is custom.">
+<title>Prijzen: Starter gratis, Pro vanaf €1.500 per maand | Moiz AI</title>
+<meta name="description" content="Prijzen van Moiz AI: Starter is gratis met één gebruiker, Pro kost €1.500 per maand met onbeperkt aantal gebruikers, Enterprise is op maat.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pricing: Starter free, Pro from €1,500 a month | Moiz AI">
-<meta property="og:description" content="Moiz AI pricing: Starter is free with one user, Pro is €1,500 a month with unlimited users, Enterprise is custom.">
+<meta property="og:title" content="Prijzen: Starter gratis, Pro vanaf €1.500 per maand | Moiz AI">
+<meta property="og:description" content="Prijzen van Moiz AI: Starter is gratis met één gebruiker, Pro kost €1.500 per maand met onbeperkt aantal gebruikers, Enterprise is op maat.">
 <meta property="og:image" content="share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -60,9 +60,10 @@
 .pts li{padding:var(--s-3) 0;border-top:1px solid var(--line,rgb(11 31 20/.14))}
 .pts li:last-child{border-bottom:1px solid var(--line,rgb(11 31 20/.14))}
 .flowvis .panel{margin:0}
+#who .card,#steps .card{display:grid;gap:var(--s-4);align-content:start;min-height:400px}#who .card h3,#steps .card h3{margin:0;font-size:var(--t-lead)}#who .card p,#steps .card p{margin:0;font-size:17px;line-height:1.55}#who .t-lead{margin-top:var(--s-6)}@media (max-width:639px){#who .card,#steps .card{min-height:0}}
 #data .panel,#flows .panel{--p-h:340px}
 #apps .panel{--p-h:300px}
-@media (max-width:639px){#data .panel{--p-h:240px}#flows .panel{--p-h:230px}#apps .panel{--p-h:150px}}
+@media (max-width:639px){#flows .flowvis{display:none}#data .panel{--p-h:240px}#flows .panel{--p-h:340px}#apps .panel{--p-h:150px}}
 @media (min-width:640px) and (max-width:1023px){#data .panel{--p-h:460px}}
 .ui-orderapp{font:400 13px/1.4 var(--font-text);width:100%}
 .ui-orderapp .oa-row{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1px solid rgb(0 0 0/.08)}
@@ -77,42 +78,43 @@
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-5)}
 @media (max-width:639px){.stats{grid-template-columns:1fr}}
 .plan{display:grid;gap:var(--s-4);align-content:start}.plan__price{font:var(--display-weight) var(--t-stat)/1 var(--font-display);margin:0}.plan--hot{outline:2px solid var(--p-accent)}.plan .btn{justify-self:start;margin-top:var(--s-3)}.extras{margin-top:var(--s-7)}@media (max-width:639px){.plan .pts li:nth-child(n+4){display:none}.extras{margin-top:var(--s-5)}}</style>
-<link rel="alternate" hreflang="en" href="pricing.html">
-<link rel="alternate" hreflang="nl" href="nl/pricing.html">
+<link rel="alternate" hreflang="nl" href="pricing.html">
+<link rel="alternate" hreflang="en" href="en/pricing.html">
+<link rel="alternate" hreflang="x-default" href="pricing.html">
 </head>
 <body>
 <header class="nav">
   <div class="wrap nav__bar">
-    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="skip-link" href="#top">Ga naar de inhoud</a>
     <a class="nav__logo" href="index.html"><span class="mark mark--initial" aria-hidden="true">M</span>Moiz AI</a>
-    <nav class="nav__links" aria-label="Main">
+    <nav class="nav__links" aria-label="Hoofdmenu">
       <div class="nav__item">
         <a class="nav__link" href="platform.html">Platform <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="nav__menu">
           <div class="wrap grid">
             <div class="menu-col span-3">
-              <p class="t-label">Foundation</p>
-              <a href="platform.html#data">Data and PIM<span>One record per product and customer</span></a>
-              <a href="platform.html#crm">CRM<span>Customers, contacts and deals</span></a>
-              <a href="platform.html#dam">DAM<span>Logos, photos, videos, documents</span></a>
-              <a href="platform.html#connect">System connections<span>ERP, CRM, webshop, mailboxes</span></a>
+              <p class="t-label">Fundament</p>
+              <a href="platform.html#data">Productdata (PIM)<span>Eén record per product</span></a>
+              <a href="platform.html#crm">Klantdata (CRM)<span>Klanten, contacten en deals</span></a>
+              <a href="platform.html#dam">Bestanden (DAM)<span>Logo's, foto's, video's, documenten</span></a>
+              <a href="platform.html#connect">Connected systems<span>ERP, webshop, mailboxes</span></a>
             </div>
             <div class="menu-col span-3">
-              <p class="t-label">On top</p>
-              <a href="platform.html#flows">AI flows<span>Orders, mail and complaints</span></a>
-              <a href="platform.html#apps">Custom apps<span>Order entry, planning, agenda</span></a>
-              <a href="platform.html#dashboards">Dashboards and access<span>The right view per role</span></a>
+              <p class="t-label">Daarbovenop</p>
+              <a href="platform.html#flows">AI flows and agents<span>Orders, mail, content en leads</span></a>
+              <a href="platform.html#apps">Maatwerk-apps<span>Orderinvoer, planning, agenda</span></a>
+              <a href="platform.html#dashboards">Dashboards en toegang<span>De juiste weergave per rol</span></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="nav__item"><a class="nav__link" href="use-cases.html">Use cases</a></div>
-      <div class="nav__item"><a class="nav__link" href="pricing.html" aria-current="page">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="use-cases.html">Toepassingen</a></div>
+      <div class="nav__item"><a class="nav__link" href="pricing.html" aria-current="page">Prijzen</a></div>
       <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
     </nav>
     <div class="nav__actions">
-      <a class="nav__link" href="nl/pricing.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a class="btn btn--primary" href="contact.html#book">Book an intro call</a>
+      <a class="nav__link" href="en/pricing.html" hreflang="en" lang="en">English</a>
+      <a class="btn btn--primary" href="contact.html#book">Plan een kennismaking</a>
     </div>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
       <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -125,28 +127,28 @@
     <div class="wrap">
       <div class="hero-text grid hero-split">
         <div class="hero-copy span-6">
-          <h1 id="hero-h">Pricing: start free, pay when you connect</h1>
-          <p class="t-lead">Unlimited users on every paid plan. Buy extra service hours or tokens whenever you need them.</p>
-          <div class="btn-row"><a class="btn btn--primary" href="contact.html#book">Book an intro call</a><a class="btn btn--secondary" href="pricing.html">See pricing</a></div>
+          <h1 id="hero-h">Prijzen: begin gratis, betaal als je koppelt</h1>
+          <p class="t-lead">Onbeperkt aantal gebruikers bij elk betaald pakket. Koop extra service-uren of tokens wanneer je ze nodig hebt.</p>
+          <div class="btn-row"><a class="btn btn--primary" href="contact.html#book">Plan een kennismaking</a><a class="btn btn--secondary" href="pricing.html">Bekijk de prijzen</a></div>
         </div>
-        <div class="hero-visual span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "fanin", "alt": "ERP, CRM, webshop, email and spreadsheets flow into one product and customer record.", "sources": [{"label": "Gmail", "icon": "gmail", "sub": "Mailboxes"}, {"label": "HubSpot", "icon": "hubspot", "sub": "Contacts"}, {"label": "Shopify", "icon": "shopify", "sub": "Orders"}, {"label": "Google Sheets", "icon": "google-sheets", "sub": "Price lists"}], "target": {"label": "PIM", "icon": "ui:database"}, "then": {"label": "Dashboards", "icon": "ui:chart-column", "meta": "live"}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div></div>
+        <div class="hero-visual span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "fanin", "alt": "ERP, CRM, webshop, mail en spreadsheets komen samen in één product- en klantrecord.", "sources": [{"label": "Gmail", "icon": "gmail", "sub": "Mailboxen"}, {"label": "HubSpot", "icon": "hubspot", "sub": "Contacten"}, {"label": "Shopify", "icon": "shopify", "sub": "Orders"}, {"label": "Google Sheets", "icon": "google-sheets", "sub": "Prijslijsten"}], "target": {"label": "PIM", "icon": "ui:database"}, "then": {"label": "Dashboards", "icon": "ui:chart-column", "meta": "live"}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div></div>
       </div>
     </div>
   </section>
   <section class="section" id="plans" aria-labelledby="plans-h">
     <div class="wrap">
-      <div class="section-head"><h2 id="plans-h">Starter, Pro and Enterprise plans</h2></div>
+      <div class="section-head"><h2 id="plans-h">Pakketten: Starter, Pro en Enterprise</h2></div>
       <div class="grid"><article class="card plan span-4">
-      <h3>Starter</h3><p class="plan__price">&euro;0<span class="muted"> a month</span></p><p class="muted">Explore the platform on your own.</p>
-      <ul class="pts"><li>1 user</li><li>Full platform, no system connections</li><li>No commitment</li></ul>
-      <a class="btn btn--secondary" href="contact.html#book">Start with Starter</a></article><article class="card plan plan--hot span-4">
-      <h3>Pro</h3><p class="plan__price">&euro;1,500<span class="muted"> a month</span></p><p class="muted">Get AI-ready and run your first flows.</p>
-      <ul class="pts"><li>Unlimited users</li><li>Connections to your systems</li><li>Service hours and AI tokens included</li><li>AI flows, apps and dashboards</li><li>Role-based access</li></ul>
-      <a class="btn btn--primary" href="contact.html#book">Book an intro call</a></article><article class="card plan span-4">
-      <h3>Enterprise</h3><p class="plan__price">Custom<span class="muted"></span></p><p class="muted">Tailored to your organisation.</p>
-      <ul class="pts"><li>Unlimited users</li><li>Service hours and tokens to your needs</li><li>Custom integrations</li></ul>
-      <a class="btn btn--secondary" href="contact.html#book">Contact us</a></article></div>
-      <p class="t-lead extras">Need more? Extra service hours and extra tokens can be added to any paid plan at any time.</p>
+      <h3>Starter</h3><p class="plan__price">&euro;0<span class="muted"> per maand</span></p><p class="muted">Verken het platform zelf.</p>
+      <ul class="pts"><li>1 gebruiker</li><li>Volledig platform, geen systeemkoppelingen</li><li>Geen verplichtingen</li></ul>
+      <a class="btn btn--secondary" href="contact.html#book">Begin met Starter</a></article><article class="card plan plan--hot span-4">
+      <h3>Pro</h3><p class="plan__price">&euro;1.500<span class="muted"> per maand</span></p><p class="muted">Draai je eerste AI-flows en agents.</p>
+      <ul class="pts"><li>Onbeperkt aantal gebruikers</li><li>Koppelingen met je systemen</li><li>Service-uren en AI-tokens inbegrepen</li><li>AI-flows, apps en dashboards</li><li>Toegang per rol</li></ul>
+      <a class="btn btn--primary" href="contact.html#book">Plan een kennismaking</a></article><article class="card plan span-4">
+      <h3>Enterprise</h3><p class="plan__price">Op maat<span class="muted"></span></p><p class="muted">Afgestemd op jouw organisatie.</p>
+      <ul class="pts"><li>Onbeperkt aantal gebruikers</li><li>Service-uren en tokens naar behoefte</li><li>Maatwerkkoppelingen</li></ul>
+      <a class="btn btn--secondary" href="contact.html#book">Neem contact op</a></article></div>
+      <p class="t-lead extras">Meer nodig? Extra service-uren en extra tokens kunnen op elk moment aan elk betaald pakket worden toegevoegd.</p>
     </div>
   </section>
 </main>
@@ -155,23 +157,23 @@
   <div class="wrap">
     <div class="closing__cta close--type">
       <div class="section-head">
-        <h2 id="close-h">Get your company AI-ready</h2>
-        <p>Tell us which systems you run. We reply within one working day.</p>
+        <h2 id="close-h">Zet je volgende stap in AI</h2>
+        <p>Vertel welke systemen je gebruikt. We reageren binnen één werkdag.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Book an intro call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Plan een kennismaking<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
     </div>
     <div class="closing__links">
       <div class="grid">
         <div class="span-6 stack-4">
           <a class="nav__logo" href="index.html"><span class="mark mark--initial" aria-hidden="true">M</span>Moiz AI</a>
-          <p class="footer__lede">Data, AI flows, apps and dashboards that make your company ready for AI.</p>
+          <p class="footer__lede">AI-flows en agents, gebouwd op data die over je systemen is afgestemd.</p>
         </div>
-        <div class="span-3 start-7 footer__col"><h3>Platform</h3><ul><li><a href="platform.html#data">Data and PIM</a></li><li><a href="platform.html#crm">CRM</a></li><li><a href="platform.html#dam">DAM</a></li><li><a href="platform.html#flows">AI flows</a></li><li><a href="platform.html#apps">Custom apps</a></li><li><a href="platform.html#dashboards">Dashboards</a></li></ul></div>
-        <div class="span-3 footer__col"><h3>Company</h3><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
+        <div class="span-3 start-7 footer__col"><h3>Platform</h3><ul><li><a href="platform.html#data">Productdata (PIM)</a></li><li><a href="platform.html#crm">Klantdata (CRM)</a></li><li><a href="platform.html#dam">Bestanden (DAM)</a></li><li><a href="platform.html#flows">AI-flows</a></li><li><a href="platform.html#apps">Maatwerk-apps</a></li><li><a href="platform.html#dashboards">Dashboards</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Bedrijf</h3><ul><li><a href="use-cases.html">Toepassingen</a></li><li><a href="pricing.html">Prijzen</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
       </div>
       <div class="footer__legal">
         <span>&copy; <span id="year">2026</span> Moiz AI</span>
-        <a class="link" href="nl/pricing.html" hreflang="nl" lang="nl">Nederlands</a>
+        <a class="link" href="en/pricing.html" hreflang="en" lang="en">English</a>
       </div>
     </div>
   </div>

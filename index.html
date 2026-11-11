@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en" data-type="software" data-radius="soft" data-ground="sage" data-buttons="pill" data-motion>
+<html lang="nl" data-type="software" data-radius="soft" data-ground="sage" data-buttons="pill" data-motion>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Moiz AI: make your company AI-ready</title>
-<meta name="description" content="Moiz AI puts your product and customer data in order, connects your systems and builds AI flows, apps and dashboards on top. Pro from €1,500 a month.">
+<title>Moiz AI: AI-flows en agents op je eigen data</title>
+<meta name="description" content="Ons platform is gebouwd voor AI. Moiz AI brengt je van een gewoon bedrijf naar een AI-gedreven bedrijf, met AI-flows en agents op data die over al je systemen is afgestemd. Pro vanaf €1.500 per maand.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Moiz AI: make your company AI-ready">
-<meta property="og:description" content="Moiz AI puts your product and customer data in order, connects your systems and builds AI flows, apps and dashboards on top. Pro from €1,500 a month.">
+<meta property="og:title" content="Moiz AI: AI-flows en agents op je eigen data">
+<meta property="og:description" content="Ons platform is gebouwd voor AI. Moiz AI brengt je van een gewoon bedrijf naar een AI-gedreven bedrijf, met AI-flows en agents op data die over al je systemen is afgestemd. Pro vanaf €1.500 per maand.">
 <meta property="og:image" content="share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -66,9 +66,10 @@
 .pts li{padding:var(--s-3) 0;border-top:1px solid var(--line,rgb(11 31 20/.14))}
 .pts li:last-child{border-bottom:1px solid var(--line,rgb(11 31 20/.14))}
 .flowvis .panel{margin:0}
+#who .card,#steps .card{display:grid;gap:var(--s-4);align-content:start;min-height:400px}#who .card h3,#steps .card h3{margin:0;font-size:var(--t-lead)}#who .card p,#steps .card p{margin:0;font-size:17px;line-height:1.55}#who .t-lead{margin-top:var(--s-6)}@media (max-width:639px){#who .card,#steps .card{min-height:0}}
 #data .panel,#flows .panel{--p-h:340px}
 #apps .panel{--p-h:300px}
-@media (max-width:639px){#data .panel{--p-h:240px}#flows .panel{--p-h:230px}#apps .panel{--p-h:150px}}
+@media (max-width:639px){#flows .flowvis{display:none}#data .panel{--p-h:240px}#flows .panel{--p-h:340px}#apps .panel{--p-h:150px}}
 @media (min-width:640px) and (max-width:1023px){#data .panel{--p-h:460px}}
 .ui-orderapp{font:400 13px/1.4 var(--font-text);width:100%}
 .ui-orderapp .oa-row{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1px solid rgb(0 0 0/.08)}
@@ -83,42 +84,43 @@
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-5)}
 @media (max-width:639px){.stats{grid-template-columns:1fr}}
 </style>
-<link rel="alternate" hreflang="en" href="index.html">
-<link rel="alternate" hreflang="nl" href="nl/index.html">
+<link rel="alternate" hreflang="nl" href="index.html">
+<link rel="alternate" hreflang="en" href="en/index.html">
+<link rel="alternate" hreflang="x-default" href="index.html">
 </head>
 <body>
 <header class="nav">
   <div class="wrap nav__bar">
-    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="skip-link" href="#top">Ga naar de inhoud</a>
     <a class="nav__logo" href="index.html"><span class="mark mark--initial" aria-hidden="true">M</span>Moiz AI</a>
-    <nav class="nav__links" aria-label="Main">
+    <nav class="nav__links" aria-label="Hoofdmenu">
       <div class="nav__item">
         <a class="nav__link" href="platform.html">Platform <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="nav__menu">
           <div class="wrap grid">
             <div class="menu-col span-3">
-              <p class="t-label">Foundation</p>
-              <a href="platform.html#data">Data and PIM<span>One record per product and customer</span></a>
-              <a href="platform.html#crm">CRM<span>Customers, contacts and deals</span></a>
-              <a href="platform.html#dam">DAM<span>Logos, photos, videos, documents</span></a>
-              <a href="platform.html#connect">System connections<span>ERP, CRM, webshop, mailboxes</span></a>
+              <p class="t-label">Fundament</p>
+              <a href="platform.html#data">Productdata (PIM)<span>Eén record per product</span></a>
+              <a href="platform.html#crm">Klantdata (CRM)<span>Klanten, contacten en deals</span></a>
+              <a href="platform.html#dam">Bestanden (DAM)<span>Logo's, foto's, video's, documenten</span></a>
+              <a href="platform.html#connect">Connected systems<span>ERP, webshop, mailboxes</span></a>
             </div>
             <div class="menu-col span-3">
-              <p class="t-label">On top</p>
-              <a href="platform.html#flows">AI flows<span>Orders, mail and complaints</span></a>
-              <a href="platform.html#apps">Custom apps<span>Order entry, planning, agenda</span></a>
-              <a href="platform.html#dashboards">Dashboards and access<span>The right view per role</span></a>
+              <p class="t-label">Daarbovenop</p>
+              <a href="platform.html#flows">AI flows and agents<span>Orders, mail, content en leads</span></a>
+              <a href="platform.html#apps">Maatwerk-apps<span>Orderinvoer, planning, agenda</span></a>
+              <a href="platform.html#dashboards">Dashboards en toegang<span>De juiste weergave per rol</span></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="nav__item"><a class="nav__link" href="use-cases.html">Use cases</a></div>
-      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="use-cases.html">Toepassingen</a></div>
+      <div class="nav__item"><a class="nav__link" href="pricing.html">Prijzen</a></div>
       <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
     </nav>
     <div class="nav__actions">
-      <a class="nav__link" href="nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a class="btn btn--primary" href="contact.html#book">Book an intro call</a>
+      <a class="nav__link" href="en/index.html" hreflang="en" lang="en">English</a>
+      <a class="btn btn--primary" href="contact.html#book">Plan een kennismaking</a>
     </div>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
       <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -130,126 +132,147 @@
   <section class="hero hero--triptych" data-enter aria-labelledby="hero-h">
     <div class="wrap"><div class="hero-text grid hero__grid">
       <div class="span-3">
-        <h1 id="hero-h">Make your company AI-ready</h1>
-        <p class="hero__lead">We put your product and customer data in order, connect your systems, then build AI flows, apps and dashboards on top. Pro from &euro;1,500 a month.</p>
+        <h1 id="hero-h">Wil je AI, maar nog geen resultaat?</h1>
+        <p class="hero__lead">De meeste bedrijven weten niet waar ze met AI moeten beginnen, of krijgen niet de resultaten die ze willen. Ons platform is gebouwd voor AI.</p>
       </div>
-      <div class="ly-collage span-6 start-4" role="img" aria-label="An order email read by an AI flow, the same price in the ERP and the webshop, and a dashboard that shows both">
+      <div class="ly-collage span-6 start-4" role="img" aria-label="Een ordermail gelezen door een AI-flow, dezelfde prijs in het ERP en de webshop, en een dashboard dat beide toont">
         <div class="ly-collage__set is-on">
           <div class="ly-piece pc-mail" style="left: 4%; top: 4%; width: 66%">
-            <span class="lbl">Order inbox</span>
-            <b>Order for week 46</b>
-            <p>Hi, please send 40 &times; oak shelf 80 cm and 12 &times; wall bracket. Delivery to our Rotterdam warehouse.</p>
+            <span class="lbl">Orderinbox</span>
+            <b>Bestelling voor week 46</b>
+            <p>Hoi, graag 40 &times; eiken plank 80 cm en 12 &times; wandbeugel. Levering naar ons magazijn in Rotterdam.</p>
           </div>
           <div class="ly-piece pc-order" style="left: 30%; top: 36%; width: 66%">
-            <span class="lbl">Created in the ERP</span>
-            <div class="ln"><span>Oak shelf 80 cm</span><b>40</b></div>
-            <div class="ln"><span>Wall bracket</span><b>12</b></div>
-            <div class="ln"><span>Customer matched</span><em>Yes</em></div>
+            <span class="lbl">Aangemaakt in het ERP</span>
+            <div class="ln"><span>Eiken plank 80 cm</span><b>40</b></div>
+            <div class="ln"><span>Wandbeugel</span><b>12</b></div>
+            <div class="ln"><span>Klant herkend</span><em>Ja</em></div>
           </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 74%; width: 36%"><i></i>AI flow done</div>
+          <div class="ly-piece pc-pill" style="left: 4%; top: 74%; width: 36%"><i></i>AI-flow klaar</div>
         </div>
         <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
             <span class="lbl">ERP</span>
-            <div class="ln"><span>Oak shelf 80 cm</span><b>&euro;89,00</b></div>
-            <div class="ln"><span>In stock</span><b>212</b></div>
+            <div class="ln"><span>Eiken plank 80 cm</span><b>&euro;89,00</b></div>
+            <div class="ln"><span>Op voorraad</span><b>212</b></div>
           </div>
           <div class="ly-piece pc-sync" style="left: 38%; top: 40%; width: 58%">
             <span class="lbl">Webshop</span>
-            <div class="ln"><span>Oak shelf 80 cm</span><b>&euro;89,00</b></div>
-            <div class="ln"><span>In stock</span><b>212</b></div>
+            <div class="ln"><span>Eiken plank 80 cm</span><b>&euro;89,00</b></div>
+            <div class="ln"><span>Op voorraad</span><b>212</b></div>
           </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 50%"><i></i>Same data everywhere</div>
+          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 50%"><i></i>Overal dezelfde data</div>
         </div>
         <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-dash" style="left: 4%; top: 6%; width: 74%">
-            <span class="lbl">Orders this week</span>
-            <b>Processed by the AI flow</b>
+            <span class="lbl">Orders deze week</span>
+            <b>Verwerkt door de AI-flow</b>
             <div class="bars"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:88%"></i></div>
           </div>
           <div class="ly-piece pc-role" style="left: 40%; top: 56%; width: 56%">
-            <span class="lbl">Sales</span>
-            <div class="ln"><span>Orders</span><em>Visible</em></div>
-            <div class="ln"><span>Revenue</span><em class="off">Hidden</em></div>
+            <span class="lbl">Verkoop</span>
+            <div class="ln"><span>Orders</span><em>Zichtbaar</em></div>
+            <div class="ln"><span>Omzet</span><em class="off">Verborgen</em></div>
           </div>
         </div>
       </div>
-      <div class="span-3 start-10 hero__cta"><a class="btn btn--primary" href="contact.html#book">Book an intro call</a></div>
+      <div class="span-3 start-10 hero__cta"><a class="btn btn--primary" href="contact.html#book">Plan een kennismaking</a></div>
     </div></div>
+  </section>
+  <section class="section ground-surface" id="who" aria-labelledby="who-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="who-h">Wil je met AI werken? <span class="muted">Hier gaat het mis.</span></h2></div>
+      <div class="grid">
+        <article class="card span-4"><h3>Je weet niet waar je moet beginnen</h3><p>Veel systemen, veel tools en geen duidelijke eerste stap. Niemand heeft het totaalbeeld.</p></article>
+        <article class="card span-4"><h3>AI levert niet de resultaten die je wilt</h3><p>AI heeft nette, gekoppelde data nodig. Zonder die data zijn antwoorden onbetrouwbaar en blijven proefjes proefjes.</p></article>
+        <article class="card span-4"><h3>Je werkt nog als een gewoon bedrijf</h3><p>Orders die met de hand worden ingevoerd, systemen die elkaar tegenspreken en dure software die je nauwelijks gebruikt.</p></article>
+      </div>
+      <p class="t-lead">Daar komen wij in beeld. Ons platform is gebouwd en ontworpen om met AI te werken. Moiz AI is jouw centrale AI-hub en een all-in pakket: we helpen met AI, digitaal en data, en brengen je van een gewoon bedrijf naar een AI-gedreven bedrijf.</p>
+    </div>
+  </section>
+  <section class="section" id="flows" aria-labelledby="flows-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="flows-h">AI-flows en agents die het werk doen.</h2></div>
+          <p class="t-lead">Ze lezen orders en mail, schrijven content, signaleren leads en draaien interne apps, in plaats van dure software. Ze werken doordat we eerst je data over elk systeem afstemmen, zodat AI het begrijpt.</p>
+          <ul class="pts">
+            <li>Flows die orders lezen en mail beantwoorden</li>
+            <li>Agents die content schrijven en leads vinden</li>
+            <li>Apps voor HR en meer, in plaats van dure software</li>
+          </ul>
+          <a class="link" href="use-cases.html">Bekijk de toepassingen</a>
+        </div>
+        <div class="span-6 start-7 flowvis">
+          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "lanes", "alt": "Een ordermail gaat naar de AI-flow, die de order leest, in het ERP aanmaakt en de klant meteen antwoordt.", "input": {"label": "Inbox", "icon": "gmail", "sub": "orders@"}, "core": {"label": "AI-flow", "icon": "ui:bot"}, "lanes": [{"label": "Gelezen", "icon": "ui:file-text", "sub": "Orderregels"}, {"label": "Aangemaakt", "icon": "ui:database", "sub": "In het ERP"}, {"label": "Concept", "icon": "ui:pen-line", "sub": "Antwoord"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section ground-surface" id="steps" aria-labelledby="steps-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="steps-h">Van gewoon bedrijf naar AI-gedreven bedrijf. <span class="muted">In drie stappen.</span></h2></div>
+      <div class="grid">
+        <article class="card span-4"><h3>1. Vertel wat de meeste tijd kost</h3><p>In een korte kennismaking vertel je welke systemen je gebruikt en waar je team uren verliest.</p></article>
+        <article class="card span-4"><h3>2. Wij brengen je data op orde</h3><p>We koppelen je systemen en zorgen dat ze hetzelfde zeggen, zodat AI ze kan lezen.</p></article>
+        <article class="card span-4"><h3>3. AI doet het werk, jij houdt de regie</h3><p>Wij bouwen de flows en agents. Een medewerker keurt goed waar het ertoe doet. Je betaalt een vast bedrag per maand.</p></article>
+      </div>
+    </div>
   </section>
   <section class="section" id="data" aria-labelledby="data-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="data-h">One record for every product and customer. <span class="muted">In every system.</span></h2>
+        <h2 id="data-h">AI werkt als elk systeem hetzelfde zegt. <span class="muted">Eén record per product en klant.</span></h2>
       </div>
       <div class="grid">
         <article class="card card--row card--open span-6">
-          <h3>Keeps product data in sync</h3>
-          <p>A price changed in the ERP is the same price in the webshop and the CRM.</p>
-          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "sync", "alt": "The ERP and the webshop keep products and customers in sync both ways.", "left": {"label": "ERP", "icon": "ui:database", "meta": "Source", "rows": [{"label": "Products", "meta": "Name, price"}, {"label": "Customers", "meta": "Address"}, {"label": "Orders", "meta": "Status"}]}, "link": {"label": "One record", "icon": "ui:refresh-cw"}, "right": {"label": "Webshop", "icon": "shopify", "meta": "Live", "rows": [{"label": "Products", "meta": "Name, price"}, {"label": "Customers", "meta": "Address"}, {"label": "Orders", "meta": "Status"}]}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
+          <h3>Houdt productdata gelijk</h3>
+          <p>Een prijs die je in het ERP wijzigt, is dezelfde prijs in de webshop en het CRM.</p>
+          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "sync", "alt": "Het ERP en de webshop houden producten en klanten in twee richtingen gelijk.", "left": {"label": "ERP", "icon": "ui:database", "meta": "Bron", "rows": [{"label": "Producten", "meta": "Naam, prijs"}, {"label": "Klanten", "meta": "Adres"}, {"label": "Orders", "meta": "Status"}]}, "link": {"label": "Eén record", "icon": "ui:refresh-cw"}, "right": {"label": "Webshop", "icon": "shopify", "meta": "Live", "rows": [{"label": "Producten", "meta": "Naam, prijs"}, {"label": "Klanten", "meta": "Adres"}, {"label": "Orders", "meta": "Status"}]}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
         </article>
         <article class="card card--row card--open span-6">
-          <h3>Pulls every source into one product record</h3>
-          <p>Mailboxes, price lists and CRM data land in one product and customer record.</p>
-          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "fanin", "alt": "ERP, CRM, webshop, email and spreadsheets flow into one product and customer record.", "sources": [{"label": "Gmail", "icon": "gmail", "sub": "Mailboxes"}, {"label": "HubSpot", "icon": "hubspot", "sub": "Contacts"}, {"label": "Shopify", "icon": "shopify", "sub": "Orders"}, {"label": "Google Sheets", "icon": "google-sheets", "sub": "Price lists"}], "target": {"label": "PIM", "icon": "ui:database"}, "then": {"label": "Dashboards", "icon": "ui:chart-column", "meta": "live"}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
+          <h3>Brengt elke bron samen in één productrecord</h3>
+          <p>Mailboxen, prijslijsten en CRM-data komen samen in één product- en klantrecord.</p>
+          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "fanin", "alt": "ERP, CRM, webshop, mail en spreadsheets komen samen in één product- en klantrecord.", "sources": [{"label": "Gmail", "icon": "gmail", "sub": "Mailboxen"}, {"label": "HubSpot", "icon": "hubspot", "sub": "Contacten"}, {"label": "Shopify", "icon": "shopify", "sub": "Orders"}, {"label": "Google Sheets", "icon": "google-sheets", "sub": "Prijslijsten"}], "target": {"label": "PIM", "icon": "ui:database"}, "then": {"label": "Dashboards", "icon": "ui:chart-column", "meta": "live"}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
         </article>
-      </div>
-    </div>
-  </section>
-  <section class="section ground-surface" id="flows" aria-labelledby="flows-h">
-    <div class="wrap">
-      <div class="grid grid--top fill">
-        <div class="span-5 stack-5">
-          <div class="section-head"><h2 id="flows-h">AI agents that work on aligned data.</h2></div>
-          <p class="t-lead">First we align your data across every system, so AI can understand it. Then we build the flows and agents on top: they read orders and mail, write content, spot leads and replace expensive software.</p>
-          <ul class="pts">
-            <li>Flows that read orders and answer mail</li>
-            <li>Agents that write content and find leads</li>
-            <li>Apps for HR and more, instead of costly software</li>
-          </ul>
-          <a class="link" href="use-cases.html">See the use cases</a>
-        </div>
-        <div class="span-6 start-7 flowvis">
-          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "lanes", "alt": "An order email goes to the AI flow, which reads the order, creates it in the ERP and answers the customer at once.", "input": {"label": "Inbox", "icon": "gmail", "sub": "orders@"}, "core": {"label": "AI flow", "icon": "ui:bot"}, "lanes": [{"label": "Read", "icon": "ui:file-text", "sub": "Order lines"}, {"label": "Created", "icon": "ui:database", "sub": "In the ERP"}, {"label": "Drafted", "icon": "ui:pen-line", "sub": "Reply"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
-        </div>
       </div>
     </div>
   </section>
   <section class="section g2" id="apps" aria-labelledby="apps-h">
     <div class="wrap">
       <div class="group">
-        <div class="section-head"><h2 id="apps-h">Apps and dashboards on your own data. <span class="muted">Each role sees its own.</span></h2></div>
+        <div class="section-head"><h2 id="apps-h">Apps en dashboards op je eigen data. <span class="muted">Elke rol ziet de eigen weergave.</span></h2></div>
         <div class="grid">
           <article class="card card--row card--open span-6">
-            <h3>Plans the week in one app</h3>
-            <p>A planning board and agenda built around how your team works.</p>
+            <h3>Plant de week in één app</h3>
+            <p>Een planbord en agenda rond de manier waarop je team werkt.</p>
             <div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px">
               <div class="ui ui-panel ui-orderapp">
                 <div class="ui-head"><div class="ui-title">Week 46</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Planning</span></div>
-                <div class="oa-row"><span>Monday</span><b>Customer visit, Utrecht</b></div>
-                <div class="oa-row"><span>Tuesday</span><b>Delivery planning</b></div>
-                <div class="oa-row"><span>Wednesday</span><b>Order review</b></div>
-                <div class="oa-row"><span>Thursday</span><b>Customer visit, Breda</b></div>
+                <div class="oa-row"><span>Maandag</span><b>Klantbezoek, Utrecht</b></div>
+                <div class="oa-row"><span>Dinsdag</span><b>Leveringsplanning</b></div>
+                <div class="oa-row"><span>Woensdag</span><b>Orderbeoordeling</b></div>
+                <div class="oa-row"><span>Donderdag</span><b>Klantbezoek, Breda</b></div>
               </div>
             </div></div></div>
           </article>
           <article class="card card--row card--open span-6">
-            <h3>Shows every role its own view of orders</h3>
-            <p>Managers see revenue. A sales employee sees orders and customers.</p>
+            <h3>Toont elke rol de eigen weergave van orders</h3>
+            <p>Managers zien de omzet. Een verkoopmedewerker ziet orders en klanten.</p>
             <div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px">
               <div class="ui ui-panel ui-toggles" data-ui="toggles">
                 <div class="ui-head">
                   <svg class="ui-icon ui-toggles__ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8 13 4v3.6c0 3-2.1 5.4-5 6.6-2.9-1.2-5-3.6-5-6.6V4z"/><path d="m5.8 8 1.6 1.6 3-3.2"/></svg>
-                  <div class="ui-title">Sales employee may see</div>
+                  <div class="ui-title">Verkoopmedewerker mag zien</div>
                   <span class="ui-spacer"></span>
-                  <div class="ui-meta" data-tg-count>3 of 5 on</div>
+                  <div class="ui-meta" data-tg-count>3 van 5 aan</div>
                 </div>
                 <ul class="ui-toggles__list">
-                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Orders dashboard</span><span class="ui-tg__sub">Own customers</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Orders dashboard"><i></i></button></li>
-                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Customer list</span><span class="ui-tg__sub">With order history</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Customer list"><i></i></button></li>
-                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Revenue dashboard</span><span class="ui-tg__sub">Managers only</span></span><button class="ui-switch" type="button" role="switch" aria-checked="false" aria-label="Revenue dashboard"><i></i></button></li>
-                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Order entry app</span><span class="ui-tg__sub">At the customer</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Order entry app"><i></i></button></li>
-                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Cost prices</span><span class="ui-tg__sub">Managers only</span></span><button class="ui-switch" type="button" role="switch" aria-checked="false" aria-label="Cost prices"><i></i></button></li>
+                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Orderdashboard</span><span class="ui-tg__sub">Eigen klanten</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Orderdashboard"><i></i></button></li>
+                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Klantenlijst</span><span class="ui-tg__sub">Met orderhistorie</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Klantenlijst"><i></i></button></li>
+                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Omzetdashboard</span><span class="ui-tg__sub">Alleen managers</span></span><button class="ui-switch" type="button" role="switch" aria-checked="false" aria-label="Omzetdashboard"><i></i></button></li>
+                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Orderinvoer-app</span><span class="ui-tg__sub">Bij de klant</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Orderinvoer-app"><i></i></button></li>
+                  <li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Kostprijzen</span><span class="ui-tg__sub">Alleen managers</span></span><button class="ui-switch" type="button" role="switch" aria-checked="false" aria-label="Kostprijzen"><i></i></button></li>
                 </ul>
               </div>
             </div></div></div>
@@ -258,34 +281,34 @@
       </div>
       <div class="grid">
         <article class="card card--row card--open span-6">
-          <h3>Enters orders at the customer</h3>
-          <p>Account managers place an order in your internal app, with the right prices.</p>
+          <h3>Voert orders in bij de klant</h3>
+          <p>Accountmanagers plaatsen een order in je interne app, met de juiste prijzen.</p>
           <div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px">
             <div class="ui ui-panel ui-orderapp">
-              <div class="ui-head"><div class="ui-title">New order</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Draft</span></div>
-              <div class="oa-row"><span>Customer</span><b>Van den Berg Interieur</b></div>
-              <div class="oa-row"><span>Oak shelf 80 cm</span><b>40 &times; &euro;89,00</b></div>
-              <div class="oa-row"><span>Wall bracket</span><b>12 &times; &euro;4,50</b></div>
-              <div class="oa-row oa-total"><span>Total</span><b>&euro;3.614,00</b></div>
-              <div class="oa-btn">Place order</div>
+              <div class="ui-head"><div class="ui-title">Nieuwe order</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Concept</span></div>
+              <div class="oa-row"><span>Klant</span><b>Van den Berg Interieur</b></div>
+              <div class="oa-row"><span>Eiken plank 80 cm</span><b>40 &times; &euro;89,00</b></div>
+              <div class="oa-row"><span>Wandbeugel</span><b>12 &times; &euro;4,50</b></div>
+              <div class="oa-row oa-total"><span>Totaal</span><b>&euro;3.614,00</b></div>
+              <div class="oa-btn">Order plaatsen</div>
             </div>
           </div></div></div>
         </article>
         <article class="card card--row card--open span-6">
-          <h3>Shows orders live</h3>
-          <p>One dashboard over all systems, always up to date.</p>
+          <h3>Toont orders live</h3>
+          <p>Eén dashboard over al je systemen, altijd actueel.</p>
           <div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px">
             <div class="ui ui-panel ui-stat" data-ui="stat" data-from="38" data-to="46" data-suffix="">
               <div class="ui-stat__head">
-                <div class="ui-stat__top"><span class="ui-stat__label">Orders processed this week</span></div>
-                <div class="ui-stat__line"><span class="ui-stat__num" data-stat-num>46</span><span class="ui-stat__sub">by the AI flow</span></div>
+                <div class="ui-stat__top"><span class="ui-stat__label">Orders verwerkt deze week</span></div>
+                <div class="ui-stat__line"><span class="ui-stat__num" data-stat-num>46</span><span class="ui-stat__sub">door de AI-flow</span></div>
               </div>
               <div class="ui-stat__chart">
                 <svg class="ui-stat__svg" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
                   <path class="ui-stat__grid" d="M0 30.5H400M0 60.5H400M0 90.5H400"/><path class="ui-stat__cover" fill-rule="evenodd" d=""/>
                   <g class="ui-stat__bars"><rect rx="3" x="0.00" y="70" width="21.14" height="50"/><rect rx="3" x="29.14" y="62" width="21.14" height="58"/><rect rx="3" x="58.29" y="66" width="21.14" height="54"/><rect rx="3" x="87.43" y="52" width="21.14" height="68"/><rect rx="3" x="116.57" y="58" width="21.14" height="62"/><rect rx="3" x="145.71" y="46" width="21.14" height="74"/><rect rx="3" x="174.86" y="50" width="21.14" height="70"/><rect rx="3" x="204.00" y="40" width="21.14" height="80"/><rect rx="3" x="233.14" y="44" width="21.14" height="76"/><rect rx="3" x="262.29" y="34" width="21.14" height="86"/><rect rx="3" x="291.43" y="38" width="21.14" height="82"/><rect rx="3" x="320.57" y="28" width="21.14" height="92"/><rect rx="3" x="349.71" y="30" width="21.14" height="90"/><rect rx="3" x="378.86" y="20" width="21.14" height="100"/></g>
                 </svg>
-                <div class="ui-stat__axis" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Today</span></div>
+                <div class="ui-stat__axis" aria-hidden="true"><span>Ma</span><span>Wo</span><span>Vandaag</span></div>
               </div>
             </div>
           </div></div></div>
@@ -295,26 +318,26 @@
   </section>
   <section class="section" id="plans" aria-labelledby="plans-h">
     <div class="wrap">
-      <div class="section-head"><h2 id="plans-h">Three plans, unlimited users on paid plans.</h2></div>
+      <div class="section-head"><h2 id="plans-h">Drie pakketten, onbeperkt aantal gebruikers bij betaalde pakketten.</h2></div>
       <div class="grid fill">
         <div class="span-5 stack-5">
-          <p class="t-lead">Start free to explore the platform on your own. Pro adds your system connections, service hours and AI tokens. Need more hours or tokens, add them at any time.</p>
-          <a class="link" href="pricing.html">Compare the plans</a>
+          <p class="t-lead">Begin gratis en verken het platform zelf. Pro voegt je systeemkoppelingen, service-uren en AI-tokens toe. Meer uren of tokens nodig? Voeg ze op elk moment toe.</p>
+          <a class="link" href="pricing.html">Vergelijk de pakketten</a>
         </div>
         <div class="span-6 start-7 stats" data-moment="counter-rolls">
-          <div class="stat"><p class="t-stat">&euro;0</p><p class="t-small muted">a month for Starter, with one user</p></div>
-          <div class="stat"><p class="t-stat">&euro;1,500</p><p class="t-small muted">a month for Pro, with unlimited users</p></div>
-          <div class="stat"><p class="t-stat">4</p><p class="t-small muted">building blocks: data, flows, apps, dashboards</p></div>
+          <div class="stat"><p class="t-stat">&euro;0</p><p class="t-small muted">per maand voor Starter, met één gebruiker</p></div>
+          <div class="stat"><p class="t-stat">&euro;1.500</p><p class="t-small muted">per maand voor Pro, met onbeperkt aantal gebruikers</p></div>
+          <div class="stat"><p class="t-stat">4</p><p class="t-small muted">bouwblokken: data, agents, apps, dashboards</p></div>
         </div>
       </div>
       <div class="grid faqrow">
         <div class="faq span-6">
-          <div class="faq__item"><h3>What does AI-ready mean?</h3><p>Your product and customer data is defined once, and every system shows the same data. Only then does AI give reliable results.</p></div>
-          <div class="faq__item"><h3>Does the platform replace our systems?</h3><p>No. We connect to what you run. You can later replace an expensive application you use a small part of.</p></div>
+          <div class="faq__item"><h3>Waarom heeft AI afgestemde data nodig?</h3><p>Een agent is zo goed als de data die hij leest. We leggen producten en klanten één keer vast, zodat elk systeem en elke agent dezelfde data ziet.</p></div>
+          <div class="faq__item"><h3>Vervangt het platform onze systemen?</h3><p>Nee. We koppelen aan wat je gebruikt. Later kun je een dure applicatie vervangen waarvan je maar een klein deel gebruikt.</p></div>
         </div>
         <div class="faq span-6">
-          <div class="faq__item"><h3>Who sees which orders in the platform?</h3><p>Administration decides per role. Managers see every dashboard, a sales employee does not see revenue.</p></div>
-          <div class="faq__item"><h3>Can we add hours to our plan?</h3><p>You can buy extra service hours and extra tokens at any time.</p></div>
+          <div class="faq__item"><h3>Wie ziet welke orders in het platform?</h3><p>De administratie bepaalt per rol. Managers zien elk dashboard, een verkoopmedewerker ziet de omzet niet.</p></div>
+          <div class="faq__item"><h3>Kunnen we uren aan ons pakket toevoegen?</h3><p>Je kunt op elk moment extra service-uren en extra tokens bijkopen.</p></div>
         </div>
       </div>
     </div>
@@ -326,23 +349,23 @@
   <div class="wrap">
     <div class="closing__cta close--type">
       <div class="section-head">
-        <h2 id="close-h">Get your company AI-ready</h2>
-        <p>Tell us which systems you run. We reply within one working day.</p>
+        <h2 id="close-h">Zet je volgende stap in AI</h2>
+        <p>Vertel welke systemen je gebruikt. We reageren binnen één werkdag.</p>
       </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Book an intro call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Plan een kennismaking<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
     </div>
     <div class="closing__links">
       <div class="grid">
         <div class="span-6 stack-4">
           <a class="nav__logo" href="index.html"><span class="mark mark--initial" aria-hidden="true">M</span>Moiz AI</a>
-          <p class="footer__lede">Data, AI flows, apps and dashboards that make your company ready for AI.</p>
+          <p class="footer__lede">AI-flows en agents, gebouwd op data die over je systemen is afgestemd.</p>
         </div>
-        <div class="span-3 start-7 footer__col"><h3>Platform</h3><ul><li><a href="platform.html#data">Data and PIM</a></li><li><a href="platform.html#crm">CRM</a></li><li><a href="platform.html#dam">DAM</a></li><li><a href="platform.html#flows">AI flows</a></li><li><a href="platform.html#apps">Custom apps</a></li><li><a href="platform.html#dashboards">Dashboards</a></li></ul></div>
-        <div class="span-3 footer__col"><h3>Company</h3><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
+        <div class="span-3 start-7 footer__col"><h3>Platform</h3><ul><li><a href="platform.html#data">Productdata (PIM)</a></li><li><a href="platform.html#crm">Klantdata (CRM)</a></li><li><a href="platform.html#dam">Bestanden (DAM)</a></li><li><a href="platform.html#flows">AI-flows</a></li><li><a href="platform.html#apps">Maatwerk-apps</a></li><li><a href="platform.html#dashboards">Dashboards</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Bedrijf</h3><ul><li><a href="use-cases.html">Toepassingen</a></li><li><a href="pricing.html">Prijzen</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
       </div>
       <div class="footer__legal">
         <span>&copy; <span id="year">2026</span> Moiz AI</span>
-        <a class="link" href="nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
+        <a class="link" href="en/index.html" hreflang="en" lang="en">English</a>
       </div>
     </div>
   </div>

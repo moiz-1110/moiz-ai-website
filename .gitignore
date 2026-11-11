@@ -3,3 +3,15 @@ node_modules/
 .wrangler/
 shots/
 .taste-skill/
+
+# kit files not needed to serve the site
+assets/photos/
+assets/objects/
+assets/scenes/
+assets/icons/demo/
+assets/icons/demo.html
+assets/starter.html
+**/demo.html
+**/_demo/
+assets/**/*.md
+assets/**/*.mjs

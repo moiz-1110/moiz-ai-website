@@ -1,0 +1,10 @@
+.git
+.gitignore
+.assetsignore
+.DS_Store
+node_modules
+.wrangler
+wrangler.jsonc
+README.md
+shots
+.taste-skill

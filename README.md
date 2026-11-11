@@ -3,14 +3,14 @@
 Static website (plain HTML/CSS/JS, no build step), deployed with GitHub + Cloudflare Pages.
 
 - English: `/index.html`, `platform.html`, `use-cases.html`, `pricing.html`, `contact.html`
-- Dutch: the same pages under `/nl/`
+- English: the same pages under `/en/`
 - Shared design kit: `/assets`
 
 ## Local preview
 ```
 python3 -m http.server 8000
 ```
-Open http://localhost:8000 (English) or http://localhost:8000/nl/index.html (Dutch).
+Open http://localhost:8000 (Dutch, the default) or http://localhost:8000/en/index.html (English).
 
 ## Deploy (Cloudflare Pages + GitHub)
 1. `git push origin main`
