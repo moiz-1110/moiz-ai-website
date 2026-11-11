@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en" data-type="software" data-radius="soft" data-ground="sage" data-buttons="pill" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Platform: PIM, CRM, DAM, AI flows and custom apps | Moiz AI</title>
+<meta name="description" content="The Moiz AI platform: PIM, CRM, DAM, system connections, AI flows, custom apps, dashboards and role-based access.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Platform: PIM, CRM, DAM, AI flows and custom apps | Moiz AI">
+<meta property="og:description" content="The Moiz AI platform: PIM, CRM, DAM, system connections, AI flows, custom apps, dashboards and role-based access.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #ffffff; --p-surface: #f1f7f3; --p-ink: #0b1f14; --p-muted: #4f6357;
+  --p-accent: #15803d; --p-accent-ink: #ffffff; --p-action: #15803d; --p-action-ink: #ffffff;
+  --p-inv-bg: #0b1f14; --p-inv-surface: #192c21; --p-inv-ink: #ffffff; --p-inv-muted: #99a29c;
+  --p-inv-accent: #ffffff; --p-inv-accent-ink: #0b1f14; --p-inv-action: #ffffff; --p-inv-action-ink: #0b1f14;
+  --font-display: "Urbanist", system-ui, sans-serif;
+  --font-text: "Urbanist", system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --display-weight: 500;
+  --display-tracking: -0.03em;
+  --display-tracking-xl: -0.04em;
+}
+</style>
+<link rel="stylesheet" href="assets/ui/base.css">
+<link rel="stylesheet" href="assets/diagrams/diagram.css">
+<link rel="stylesheet" href="assets/ui/toggles/fragment.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<style>
+.ly-collage{container-type:inline-size}
+.ly-collage .ly-piece{box-shadow:0 1px 2px rgb(0 0 0/.08),0 22px 48px -22px rgb(11 31 20/.35)}
+.ly-collage :is(.pc-mail,.pc-order,.pc-sync,.pc-dash,.pc-role){background:#fff;border:1px solid rgb(11 31 20/.1);color:#161616;padding:3.2cqw;display:grid;gap:1.6cqw;font:400 max(13px,2cqw)/1.35 "Urbanist",sans-serif;border-radius:2cqw}
+.ly-collage .lbl{color:#6a6a66;font-size:max(13px,1.7cqw)}
+.ly-collage .pc-mail b{font-weight:600;font-size:max(14px,2.4cqw)}
+.ly-collage .pc-mail p{margin:0}
+.ly-collage .ln{display:flex;justify-content:space-between;gap:2cqw;padding-top:1.4cqw;border-top:1px solid #ececea}
+.ly-collage .ln em{font-style:normal;color:#1f7a4d;font-weight:500}
+.ly-collage .ln em.off{color:#b8341c}
+.ly-collage .pc-pill{background:var(--p-accent);color:#fff;border-radius:99px;padding:1.6cqw 3cqw;display:flex;align-items:center;gap:1.4cqw;font:500 max(13px,2cqw)/1.2 "Urbanist",sans-serif}
+.ly-collage .pc-pill i{width:1.6cqw;height:1.6cqw;border-radius:50%;background:#fff}
+.ly-collage .pc-dash b{font-weight:600;font-size:max(14px,2.4cqw)}
+.ly-collage .bars{display:flex;align-items:flex-end;gap:1.6cqw;height:16cqw}
+.ly-collage .bars i{flex:1;background:var(--p-accent);border-radius:.8cqw}
+.pts{list-style:none;padding:0;margin:var(--s-4) 0 var(--s-3);display:grid}
+.pts li{padding:var(--s-3) 0;border-top:1px solid var(--line,rgb(11 31 20/.14))}
+.pts li:last-child{border-bottom:1px solid var(--line,rgb(11 31 20/.14))}
+.flowvis .panel{margin:0}
+#data .panel,#flows .panel{--p-h:340px}
+#apps .panel{--p-h:300px}
+@media (max-width:639px){#data .panel{--p-h:240px}#flows .panel{--p-h:230px}#apps .panel{--p-h:150px}}
+@media (min-width:640px) and (max-width:1023px){#data .panel{--p-h:460px}}
+.ui-orderapp{font:400 13px/1.4 var(--font-text);width:100%}
+.ui-orderapp .oa-row{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1px solid rgb(0 0 0/.08)}
+.ui-orderapp .oa-total{font-weight:600}
+.ui-orderapp .oa-btn{margin:10px 14px 14px;background:#111;color:#fff;text-align:center;border-radius:8px;padding:10px;font-weight:500}
+.faqrow{margin-top:var(--s-8)}
+.hero-visual .panel{--p-h:620px}
+@media (max-width:639px){.hero-visual .panel{--p-h:240px}}
+@media (max-width:420px){.nav__actions{display:none}}
+.footer .nav__logo{align-self:flex-start;justify-self:start}
+@media (max-width:639px){#plans .faq:nth-child(2){display:none}#plans .stat{display:flex;gap:var(--s-4);align-items:baseline}#plans .stats{gap:var(--s-3)}.faqrow{display:none}.faqrow{margin-top:var(--s-6)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-5)}
+@media (max-width:639px){.stats{grid-template-columns:1fr}}
+
+#data .panel,#crm .panel,#dam .panel,#flows .panel,#connect .panel,#apps .panel,#dashboards .panel{--p-h:340px}
+@media (max-width:639px){#data .panel,#crm .panel,#dam .panel,#flows .panel,#connect .panel,#apps .panel,#dashboards .panel{--p-h:220px}}
+</style>
+<link rel="alternate" hreflang="en" href="platform.html">
+<link rel="alternate" hreflang="nl" href="nl/platform.html">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="index.html"><span class="mark mark--initial" aria-hidden="true">M</span>Moiz AI</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="platform.html" aria-current="page">Platform <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-3">
+              <p class="t-label">Foundation</p>
+              <a href="platform.html#data">Data and PIM<span>One record per product and customer</span></a>
+              <a href="platform.html#crm">CRM<span>Customers, contacts and deals</span></a>
+              <a href="platform.html#dam">DAM<span>Logos, photos, videos, documents</span></a>
+              <a href="platform.html#connect">System connections<span>ERP, CRM, webshop, mailboxes</span></a>
+            </div>
+            <div class="menu-col span-3">
+              <p class="t-label">On top</p>
+              <a href="platform.html#flows">AI flows<span>Orders, mail and complaints</span></a>
+              <a href="platform.html#apps">Custom apps<span>Order entry, planning, agenda</span></a>
+              <a href="platform.html#dashboards">Dashboards and access<span>The right view per role</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="use-cases.html">Use cases</a></div>
+      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="nl/platform.html" hreflang="nl" lang="nl">Nederlands</a>
+      <a class="btn btn--primary" href="contact.html#book">Book an intro call</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text grid hero-split">
+        <div class="hero-copy span-6">
+          <h1 id="hero-h">The platform behind AI-ready companies</h1>
+          <p class="t-lead">Data and PIM, CRM, DAM, system connections, AI flows, custom apps and dashboards in one place. Pro from &euro;1,500 a month with unlimited users.</p>
+          <div class="btn-row"><a class="btn btn--primary" href="contact.html#book">Book an intro call</a><a class="btn btn--secondary" href="pricing.html">See pricing</a></div>
+        </div>
+        <div class="hero-visual span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "hub", "alt": "Moiz AI at the centre, connected to ERP, CRM, webshop, email and spreadsheets.", "center": {"label": "Moiz AI", "icon": "ui:bot"}, "spokes": [{"label": "Gmail", "icon": "gmail"}, {"label": "HubSpot", "icon": "hubspot"}, {"label": "Shopify", "icon": "shopify"}, {"label": "Google Sheets", "icon": "google-sheets"}, {"label": "ERP", "icon": "ui:database"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="data" aria-labelledby="data-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="data-h">Data and PIM: define customers and products once.</h2></div>
+          <p class="t-lead">Product, customer and other core data defined once. Every system then shows the same information.</p>
+          <ul class="pts"><li>One record per product and customer</li><li>Changes flow to every connected system</li><li>Clear ownership of each field</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "sync", "alt": "The ERP and the webshop keep products and customers in sync both ways.", "left": {"label": "ERP", "icon": "ui:database", "meta": "Source", "rows": [{"label": "Products", "meta": "Name, price"}, {"label": "Customers", "meta": "Address"}, {"label": "Orders", "meta": "Status"}]}, "link": {"label": "One record", "icon": "ui:refresh-cw"}, "right": {"label": "Webshop", "icon": "shopify", "meta": "Live", "rows": [{"label": "Products", "meta": "Name, price"}, {"label": "Customers", "meta": "Address"}, {"label": "Orders", "meta": "Status"}]}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section ground-surface" id="crm" aria-labelledby="crm-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="crm-h">CRM: what is a customer?</h2></div>
+          <p class="t-lead">Start with the question: what is a customer? Your current systems each answer it differently, with misshapen data and no structure. We fix that from our central system for core data products.</p>
+          <ul class="pts"><li>One definition of a customer, set once</li><li>Duplicates and messy records cleaned and merged</li><li>Structure from the core, synced to ERP, webshop and mail</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px"><div class="ui ui-panel ui-orderapp"><div class="ui-head"><div class="ui-title">One customer</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">3 records merged</span></div><div class="oa-row"><span>ERP</span><b>Berg, van den BV</b></div><div class="oa-row"><span>Webshop</span><b>V.d. Berg Interieur</b></div><div class="oa-row"><span>Mailbox</span><b>vandenberg interieur</b></div><div class="oa-row"><span>Customer</span><b>Van den Berg Interieur</b></div><div class="oa-row"><span>Status</span><b>One definition</b></div></div></div></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="dam" aria-labelledby="dam-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="dam-h">DAM: all brand files in one library.</h2></div>
+          <p class="t-lead">Logos, photos, videos and documents stored once, tagged and shared. Every system and app uses the approved file.</p>
+          <ul class="pts"><li>Search by tag, product or campaign</li><li>Approved versions only</li><li>Linked to the product in the PIM</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "grid", "alt": "Logos, photos, videos, brochures, price lists and manuals are stored once, tagged and shared.", "group": "Your files", "sources": [{"label": "Logos", "icon": "ui:image"}, {"label": "Photos", "icon": "ui:camera"}, {"label": "Videos", "icon": "ui:film"}, {"label": "Brochures", "icon": "pdf"}], "stages": [{"label": "Tagged", "icon": "ui:tags"}, {"label": "Approved", "icon": "ui:list-checks"}, {"label": "Shared", "icon": "ui:share-2"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section ground-surface" id="connect" aria-labelledby="connect-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="connect-h">Connect the systems you already run.</h2></div>
+          <p class="t-lead">ERP, CRM, webshop, mailboxes and spreadsheets work from the same data. Replace an expensive application when you only use a small part of it.</p>
+          <ul class="pts"><li>Starts with what you have</li><li>Two-way sync, not copy and paste</li><li>Replace costly software step by step</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "hub", "alt": "Moiz AI at the centre, connected to ERP, CRM, webshop, email and spreadsheets.", "center": {"label": "Moiz AI", "icon": "ui:bot"}, "spokes": [{"label": "Gmail", "icon": "gmail"}, {"label": "HubSpot", "icon": "hubspot"}, {"label": "Shopify", "icon": "shopify"}, {"label": "Google Sheets", "icon": "google-sheets"}, {"label": "ERP", "icon": "ui:database"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="flows" aria-labelledby="flows-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="flows-h">AI agents that work on aligned data.</h2></div>
+          <p class="t-lead">Agents only work well on data they understand. We align your data across all systems first, then build AI flows and agents on it: orders and mail, content, lead analysis and internal apps. Any flow you can describe, we can build.</p>
+          <ul class="pts"><li>Data aligned across systems, readable for AI</li><li>Agents for orders, mail, content and leads</li><li>A person reviews where it matters</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "lanes", "alt": "An order email goes to the AI flow, which reads the order, creates it in the ERP and answers the customer at once.", "input": {"label": "Inbox", "icon": "gmail", "sub": "orders@"}, "core": {"label": "AI flow", "icon": "ui:bot"}, "lanes": [{"label": "Read", "icon": "ui:file-text", "sub": "Order lines"}, {"label": "Created", "icon": "ui:database", "sub": "In the ERP"}, {"label": "Drafted", "icon": "ui:pen-line", "sub": "Reply"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section ground-surface" id="apps" aria-labelledby="apps-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="apps-h">Custom apps built around your process.</h2></div>
+          <p class="t-lead">Custom in-house apps on your own data: an account manager places an order at a customer, a planning board shows the week, an agenda keeps the team aligned.</p>
+          <ul class="pts"><li>Order entry for account managers</li><li>Planning board and agenda</li><li>Built for your team, not a generic tool</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px"><div class="ui ui-panel ui-orderapp"><div class="ui-head"><div class="ui-title">New order</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Draft</span></div><div class="oa-row"><span>Customer</span><b>Van den Berg Interieur</b></div><div class="oa-row"><span>Oak shelf 80 cm</span><b>40 &times; &euro;89,00</b></div><div class="oa-row"><span>Wall bracket</span><b>12 &times; &euro;4,50</b></div><div class="oa-row oa-total"><span>Total</span><b>&euro;3.614,00</b></div><div class="oa-btn">Place order</div></div></div></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="dashboards" aria-labelledby="dashboards-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <div class="section-head"><h2 id="dashboards-h">Dashboards and access for every role.</h2></div>
+          <p class="t-lead">See all your information in one place. Administration decides who sees what: managers see every dashboard, a sales employee does not see revenue.</p>
+          <ul class="pts"><li>Dashboards over all your systems</li><li>Roles and permissions across data, apps and dashboards</li><li>Always up to date</li></ul>
+        </div>
+        <article class="card card--row card--open span-6 start-7"><div class="panel"><div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:420px;--ax:max(24px, 50% - 210px);--ay:24px;--ay-sm:16px"><div class="ui ui-panel ui-toggles" data-ui="toggles"><div class="ui-head"><svg class="ui-icon ui-toggles__ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8 13 4v3.6c0 3-2.1 5.4-5 6.6-2.9-1.2-5-3.6-5-6.6V4z"/><path d="m5.8 8 1.6 1.6 3-3.2"/></svg><div class="ui-title">Sales employee may see</div><span class="ui-spacer"></span><div class="ui-meta" data-tg-count>3 of 4 on</div></div><ul class="ui-toggles__list"><li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Orders dashboard</span><span class="ui-tg__sub">Own customers</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Orders dashboard"><i></i></button></li><li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Customer list</span><span class="ui-tg__sub">With order history</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Customer list"><i></i></button></li><li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Revenue dashboard</span><span class="ui-tg__sub">Managers only</span></span><button class="ui-switch" type="button" role="switch" aria-checked="false" aria-label="Revenue dashboard"><i></i></button></li><li class="ui-tg"><span class="ui-tg__text"><span class="ui-tg__label">Order entry app</span><span class="ui-tg__sub">At the customer</span></span><button class="ui-switch is-on" type="button" role="switch" aria-checked="true" aria-label="Order entry app"><i></i></button></li></ul></div></div></div></div></article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer closing" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Get your company AI-ready</h2>
+        <p>Tell us which systems you run. We reply within one working day.</p>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Book an intro call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <a class="nav__logo" href="index.html"><span class="mark mark--initial" aria-hidden="true">M</span>Moiz AI</a>
+          <p class="footer__lede">Data, AI flows, apps and dashboards that make your company ready for AI.</p>
+        </div>
+        <div class="span-3 start-7 footer__col"><h3>Platform</h3><ul><li><a href="platform.html#data">Data and PIM</a></li><li><a href="platform.html#crm">CRM</a></li><li><a href="platform.html#dam">DAM</a></li><li><a href="platform.html#flows">AI flows</a></li><li><a href="platform.html#apps">Custom apps</a></li><li><a href="platform.html#dashboards">Dashboards</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Company</h3><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; <span id="year">2026</span> Moiz AI</span>
+        <a class="link" href="nl/platform.html" hreflang="nl" lang="nl">Nederlands</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="assets/diagrams/mount.js"></script>
+</body>
+</html>
