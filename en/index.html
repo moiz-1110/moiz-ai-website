@@ -67,9 +67,9 @@
 .pts li:last-child{border-bottom:1px solid var(--line,rgb(11 31 20/.14))}
 .flowvis .panel{margin:0}
 #who .card,#steps .card{display:grid;gap:var(--s-4);align-content:start;min-height:400px}#who .card h3,#steps .card h3{margin:0;font-size:var(--t-lead)}#who .card p,#steps .card p{margin:0;font-size:17px;line-height:1.55}#who .t-lead{margin-top:var(--s-6)}@media (max-width:639px){#who .card,#steps .card{min-height:0}}
-#data .panel,#flows .panel{--p-h:340px}
+#data .panel,#flows .panel{--p-h:260px}
 #apps .panel{--p-h:300px}
-@media (max-width:639px){#flows .flowvis{display:none}#data .panel{--p-h:240px}#flows .panel{--p-h:340px}#apps .panel{--p-h:150px}}
+@media (max-width:639px){#data .panel{--p-h:240px}#flows .panel{--p-h:260px}#apps .panel{--p-h:150px}}
 @media (min-width:640px) and (max-width:1023px){#data .panel{--p-h:460px}}
 .ui-orderapp{font:400 13px/1.4 var(--font-text);width:100%}
 .ui-orderapp .oa-row{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1px solid rgb(0 0 0/.08)}
@@ -135,22 +135,8 @@
         <h1 id="hero-h">Want AI, but no results yet?</h1>
         <p class="hero__lead">Most companies don't know where to start with AI, or don't get the results they want. Our platform is built for AI.</p>
       </div>
-      <div class="ly-collage span-6 start-4" role="img" aria-label="An order email read by an AI flow, the same price in the ERP and the webshop, and a dashboard that shows both">
+      <div class="ly-collage span-6 start-4" role="img" aria-label="The same price in the ERP and the webshop, and a dashboard that shows the work done by AI agents">
         <div class="ly-collage__set is-on">
-          <div class="ly-piece pc-mail" style="left: 4%; top: 4%; width: 66%">
-            <span class="lbl">Order inbox</span>
-            <b>Order for week 46</b>
-            <p>Hi, please send 40 &times; oak shelf 80 cm and 12 &times; wall bracket. Delivery to our Rotterdam warehouse.</p>
-          </div>
-          <div class="ly-piece pc-order" style="left: 30%; top: 36%; width: 66%">
-            <span class="lbl">Created in the ERP</span>
-            <div class="ln"><span>Oak shelf 80 cm</span><b>40</b></div>
-            <div class="ln"><span>Wall bracket</span><b>12</b></div>
-            <div class="ln"><span>Customer matched</span><em>Yes</em></div>
-          </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 74%; width: 36%"><i></i>AI flow done</div>
-        </div>
-        <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
             <span class="lbl">ERP</span>
             <div class="ln"><span>Oak shelf 80 cm</span><b>&euro;89,00</b></div>
@@ -165,8 +151,8 @@
         </div>
         <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-dash" style="left: 4%; top: 6%; width: 74%">
-            <span class="lbl">Orders this week</span>
-            <b>Processed by the AI flow</b>
+            <span class="lbl">This week</span>
+            <b>Done by AI agents</b>
             <div class="bars"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:88%"></i></div>
           </div>
           <div class="ly-piece pc-role" style="left: 40%; top: 56%; width: 56%">
@@ -204,7 +190,7 @@
           <a class="link" href="use-cases.html">See the use cases</a>
         </div>
         <div class="span-6 start-7 flowvis">
-          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "lanes", "alt": "An order email goes to the AI flow, which reads the order, creates it in the ERP and answers the customer at once.", "input": {"label": "Inbox", "icon": "gmail", "sub": "orders@"}, "core": {"label": "AI flow", "icon": "ui:bot"}, "lanes": [{"label": "Read", "icon": "ui:file-text", "sub": "Order lines"}, {"label": "Created", "icon": "ui:database", "sub": "In the ERP"}, {"label": "Drafted", "icon": "ui:pen-line", "sub": "Reply"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
+          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "hub", "alt": "Moiz AI at the centre, connected to ERP, CRM, webshop, email and spreadsheets.", "center": {"label": "Moiz AI", "icon": "ui:bot"}, "spokes": [{"label": "Gmail", "icon": "gmail"}, {"label": "HubSpot", "icon": "hubspot"}, {"label": "Shopify", "icon": "shopify"}, {"label": "Google Sheets", "icon": "google-sheets"}, {"label": "ERP", "icon": "ui:database"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
         </div>
       </div>
     </div>
@@ -350,7 +336,7 @@
     <div class="closing__cta close--type">
       <div class="section-head">
         <h2 id="close-h">Take your next step into AI</h2>
-        <p>Tell us which systems you run. We reply within one working day.</p>
+        <p>Tell us which systems you run. We always get in touch within 24 hours.</p>
       </div>
       <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Book an intro call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
     </div>

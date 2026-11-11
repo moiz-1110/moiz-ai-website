@@ -67,9 +67,9 @@
 .pts li:last-child{border-bottom:1px solid var(--line,rgb(11 31 20/.14))}
 .flowvis .panel{margin:0}
 #who .card,#steps .card{display:grid;gap:var(--s-4);align-content:start;min-height:400px}#who .card h3,#steps .card h3{margin:0;font-size:var(--t-lead)}#who .card p,#steps .card p{margin:0;font-size:17px;line-height:1.55}#who .t-lead{margin-top:var(--s-6)}@media (max-width:639px){#who .card,#steps .card{min-height:0}}
-#data .panel,#flows .panel{--p-h:340px}
+#data .panel,#flows .panel{--p-h:260px}
 #apps .panel{--p-h:300px}
-@media (max-width:639px){#flows .flowvis{display:none}#data .panel{--p-h:240px}#flows .panel{--p-h:340px}#apps .panel{--p-h:150px}}
+@media (max-width:639px){#data .panel{--p-h:240px}#flows .panel{--p-h:260px}#apps .panel{--p-h:150px}}
 @media (min-width:640px) and (max-width:1023px){#data .panel{--p-h:460px}}
 .ui-orderapp{font:400 13px/1.4 var(--font-text);width:100%}
 .ui-orderapp .oa-row{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1px solid rgb(0 0 0/.08)}
@@ -135,22 +135,8 @@
         <h1 id="hero-h">Wil je AI, maar nog geen resultaat?</h1>
         <p class="hero__lead">De meeste bedrijven weten niet waar ze met AI moeten beginnen, of krijgen niet de resultaten die ze willen. Ons platform is gebouwd voor AI.</p>
       </div>
-      <div class="ly-collage span-6 start-4" role="img" aria-label="Een ordermail gelezen door een AI-flow, dezelfde prijs in het ERP en de webshop, en een dashboard dat beide toont">
+      <div class="ly-collage span-6 start-4" role="img" aria-label="The same price in the ERP and the webshop, and a dashboard that shows the work done by AI agents">
         <div class="ly-collage__set is-on">
-          <div class="ly-piece pc-mail" style="left: 4%; top: 4%; width: 66%">
-            <span class="lbl">Orderinbox</span>
-            <b>Bestelling voor week 46</b>
-            <p>Hoi, graag 40 &times; eiken plank 80 cm en 12 &times; wandbeugel. Levering naar ons magazijn in Rotterdam.</p>
-          </div>
-          <div class="ly-piece pc-order" style="left: 30%; top: 36%; width: 66%">
-            <span class="lbl">Aangemaakt in het ERP</span>
-            <div class="ln"><span>Eiken plank 80 cm</span><b>40</b></div>
-            <div class="ln"><span>Wandbeugel</span><b>12</b></div>
-            <div class="ln"><span>Klant herkend</span><em>Ja</em></div>
-          </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 74%; width: 36%"><i></i>AI-flow klaar</div>
-        </div>
-        <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
             <span class="lbl">ERP</span>
             <div class="ln"><span>Eiken plank 80 cm</span><b>&euro;89,00</b></div>
@@ -165,8 +151,8 @@
         </div>
         <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-dash" style="left: 4%; top: 6%; width: 74%">
-            <span class="lbl">Orders deze week</span>
-            <b>Verwerkt door de AI-flow</b>
+            <span class="lbl">Deze week</span>
+            <b>Gedaan door AI-agents</b>
             <div class="bars"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:88%"></i></div>
           </div>
           <div class="ly-piece pc-role" style="left: 40%; top: 56%; width: 56%">
@@ -204,7 +190,7 @@
           <a class="link" href="use-cases.html">Bekijk de toepassingen</a>
         </div>
         <div class="span-6 start-7 flowvis">
-          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "lanes", "alt": "Een ordermail gaat naar de AI-flow, die de order leest, in het ERP aanmaakt en de klant meteen antwoordt.", "input": {"label": "Inbox", "icon": "gmail", "sub": "orders@"}, "core": {"label": "AI-flow", "icon": "ui:bot"}, "lanes": [{"label": "Gelezen", "icon": "ui:file-text", "sub": "Orderregels"}, {"label": "Aangemaakt", "icon": "ui:database", "sub": "In het ERP"}, {"label": "Concept", "icon": "ui:pen-line", "sub": "Antwoord"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
+          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "hub", "alt": "Moiz AI in het midden, gekoppeld aan ERP, CRM, webshop, mail en spreadsheets.", "center": {"label": "Moiz AI", "icon": "ui:bot"}, "spokes": [{"label": "Gmail", "icon": "gmail"}, {"label": "HubSpot", "icon": "hubspot"}, {"label": "Shopify", "icon": "shopify"}, {"label": "Google Sheets", "icon": "google-sheets"}, {"label": "ERP", "icon": "ui:database"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
         </div>
       </div>
     </div>
@@ -350,7 +336,7 @@
     <div class="closing__cta close--type">
       <div class="section-head">
         <h2 id="close-h">Zet je volgende stap in AI</h2>
-        <p>Vertel welke systemen je gebruikt. We reageren binnen één werkdag.</p>
+        <p>Vertel welke systemen je gebruikt. We nemen altijd binnen 24 uur contact op.</p>
       </div>
       <a class="btn btn--primary btn--xl btn--wide" href="contact.html#book">Plan een kennismaking<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
     </div>
