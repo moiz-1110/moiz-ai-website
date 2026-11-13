@@ -103,42 +103,7 @@
 .sv__out .oa-row{font:400 17px/1.4 var(--font-text);padding:10px 0}.sv__out b.good{color:#1f7a4d}.sv__out b.bad{color:#b8341c}
 .sv__qh{margin-top:var(--s-8)}.sv__q .card{display:grid;gap:var(--s-3);align-content:start}.sv__q h3{margin:0;font-size:var(--t-lead)}.sv__q p{margin:0;font-size:17px;line-height:1.55}
 </style>
-<style>
-.srcdia{align-self:center;background:#fff;border:1px solid #e1ece5;border-radius:26px;padding:clamp(10px,2vw,22px);box-shadow:0 30px 60px -36px rgba(21,128,61,.35),0 2px 6px rgba(11,31,20,.04)}
-.srcdia svg{width:100%;height:auto;display:block}.srcdia text{font-family:Urbanist,system-ui,sans-serif}
-.srcdia .cap{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;fill:#7a8f82}
-.srcdia .sb{fill:#fff;stroke:#dbe8e0;stroke-width:1.5}.srcdia .si{fill:#e8f5ee}.srcdia .sn{font-size:12px;font-weight:700;fill:#15803d}.srcdia .st{font-size:16px;font-weight:600;fill:#0b1f14}
-.srcdia .sl{fill:none;stroke:#cfe3d6;stroke-width:2}
-.srcdia .sd{fill:#16a34a;filter:drop-shadow(0 0 4px rgba(22,163,74,.7))}
-.srcdia .ob{fill:#15803d}.srcdia .ico{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
-.srcdia .ot{font-size:22px;font-weight:700;fill:#fff;letter-spacing:-.01em}.srcdia .ot2{font-size:15px;font-weight:500;fill:#d6f0df}.srcdia .os{font-size:12.5px;fill:#bfe6cc}
-.srcdia .ab{fill:#f3f9f5;stroke:#cfe3d6;stroke-width:1.5}.srcdia .at{font-size:16px;font-weight:700;fill:#0b1f14}.srcdia .as{font-size:13px;fill:#4f6357}
-.srcdia .pulse{fill:#16a34a;animation:pls 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-@keyframes pls{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.7);opacity:.4}}
-.afl{display:grid;gap:var(--s-4);align-content:start}.afl h3{margin:0;font-size:var(--t-lead)}
-.afl__box{background:#fff;border:1px solid #e1ece5;border-radius:20px;padding:20px 16px 18px;display:grid;justify-items:center;gap:0;box-shadow:0 20px 40px -30px rgba(21,128,61,.35)}
-.afl__chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
-.afl__chips span{background:#fff;border:1px solid #dbe8e0;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:#0b1f14;line-height:1.2}
-.afl__chips--out span{background:#f3f9f5;border-color:#bfe0cb;color:#15803d}
-.afl__ln{display:block;width:2px;height:30px;background:#cfe3d6;position:relative;margin:6px 0}
-.afl__ln::after{content:"";position:absolute;left:-4px;top:0;width:10px;height:10px;border-radius:50%;background:#16a34a;box-shadow:0 0 8px rgba(22,163,74,.7);animation:run 1.6s ease-in-out infinite}
-.afl__ln--2::after{animation-delay:.8s}
-@keyframes run{0%{top:-4px;opacity:0}20%{opacity:1}80%{opacity:1}100%{top:26px;opacity:0}}
-.afl__ai{background:#15803d;color:#fff;border-radius:16px;padding:12px 22px;text-align:center;animation:aib 2.4s ease-in-out infinite}
-.afl__ai b{display:block;font-size:15px;font-weight:700}.afl__ai small{display:block;font-size:13px;color:#d6f0df;margin-top:2px}
-@keyframes aib{0%,100%{box-shadow:0 0 0 0 rgba(22,163,74,.35)}50%{box-shadow:0 0 0 9px rgba(22,163,74,0)}}
-.afl__foot{margin-top:16px}.afl__foot span{display:inline-block;font-size:13px;font-weight:600;color:#15803d;background:#e8f5ee;border-radius:999px;padding:6px 14px}
-.afl__head{display:flex;align-items:center;justify-content:space-between;width:100%;margin-bottom:14px}
-.afl__name{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:#0b1f14}.afl__name i{width:10px;height:10px;border-radius:50%;background:#16a34a;animation:pls2 1.4s ease-in-out infinite}
-.afl__head em{font-style:normal;font-size:12px;font-weight:700;color:#15803d;background:#e8f5ee;border-radius:999px;padding:3px 10px;text-transform:uppercase;letter-spacing:.06em}
-@keyframes pls2{50%{transform:scale(1.6);opacity:.45}}
-.afl__log{display:grid;gap:8px;width:100%}
-.afl__log div{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dbe8e0;border-radius:12px;padding:10px 12px;font-size:14px;font-weight:600;color:#0b1f14;line-height:1.3;animation:lg 8s linear infinite}
-.afl__log div span{flex:none;width:24px;height:24px;border-radius:50%;background:#f3f9f5;border:1.5px solid #bfe0cb;color:#15803d;font-size:12px;font-weight:700;display:grid;place-items:center}
-.afl__log div:nth-child(2){animation-delay:2s}.afl__log div:nth-child(3){animation-delay:4s}.afl__log div:nth-child(4){animation-delay:6s}
-@keyframes lg{0%,22%{border-color:#16a34a;background:#f3f9f5;box-shadow:0 6px 16px -10px rgba(22,163,74,.6)}27%,100%{border-color:#dbe8e0;background:#fff;box-shadow:none}}
-@media (prefers-reduced-motion:reduce){.srcdia .pulse,.afl__ln::after,.afl__ai,.afl__log div,.afl__name i{animation:none}}
-</style>
+<style>.heroflow .panel{--p-h:400px}#examples .panel{--p-h:300px}@media (max-width:639px){.heroflow .panel{--p-h:300px}}</style>
 </head>
 <body>
 <header class="nav">
@@ -188,16 +153,7 @@
         <h1 id="hero-h">Want AI, but no results yet?</h1>
         <p class="hero__lead">Most companies don't know where to start with AI, or don't get the results they want. Our platform is built for AI. Flows and agents do the work automatically.</p>
       </div>
-      <div class="span-6 start-4 srcdia" role="img" aria-label="Exact, HubSpot, Shopify and Gmail flow into the Moiz AI platform, where all your data lives in one place. An order flow, a marketing agent and a support agent work from the platform.">
-        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <text x="24" y="40" class="cap">Your systems</text><text x="470" y="40" class="cap">Works automatically</text>
-          <path id="p0" d="M164 88 C 204 88, 200 200, 240 200" class="sl"/><path id="p1" d="M164 156 C 204 156, 200 200, 240 200" class="sl"/><path id="p2" d="M164 224 C 204 224, 200 200, 240 200" class="sl"/><path id="p3" d="M164 292 C 204 292, 200 200, 240 200" class="sl"/><path id="o0" d="M400 200 C 435 200, 435 100, 470 100" class="sl"/><path id="o1" d="M400 200 C 435 200, 435 200, 470 200" class="sl"/><path id="o2" d="M400 200 C 435 200, 435 300, 470 300" class="sl"/><g><rect x="24" y="64" width="140" height="48" rx="12" class="sb"/><circle cx="48" cy="88" r="11" class="si"/><text x="48" y="92.5" text-anchor="middle" class="sn">E</text><text x="68" y="93" class="st">Exact</text></g><g><rect x="24" y="132" width="140" height="48" rx="12" class="sb"/><circle cx="48" cy="156" r="11" class="si"/><text x="48" y="160.5" text-anchor="middle" class="sn">H</text><text x="68" y="161" class="st">HubSpot</text></g><g><rect x="24" y="200" width="140" height="48" rx="12" class="sb"/><circle cx="48" cy="224" r="11" class="si"/><text x="48" y="228.5" text-anchor="middle" class="sn">S</text><text x="68" y="229" class="st">Shopify</text></g><g><rect x="24" y="268" width="140" height="48" rx="12" class="sb"/><circle cx="48" cy="292" r="11" class="si"/><text x="48" y="296.5" text-anchor="middle" class="sn">G</text><text x="68" y="297" class="st">Gmail</text></g>
-          <g><rect x="240" y="124" width="160" height="152" rx="22" class="ob"/>
-            <g transform="translate(308 140)" class="ico"><path d="m12 2 10 5.5-10 5.5L2 7.5z"/><path d="m2 12.5 10 5.5 10-5.5"/><path d="m2 17.5 10 5.5 10-5.5"/></g>
-            <text x="320" y="206" text-anchor="middle" class="ot">Moiz AI</text><text x="320" y="228" text-anchor="middle" class="ot2">platform</text><text x="320" y="254" text-anchor="middle" class="os">all data in one place</text></g>
-          <g><rect x="470" y="70" width="146" height="60" rx="14" class="ab"/><circle cx="600" cy="84" r="4" class="pulse"/><text x="486" y="97" class="at">Order flow</text><text x="486" y="116" class="as">mail becomes order</text></g><g><rect x="470" y="170" width="146" height="60" rx="14" class="ab"/><circle cx="600" cy="184" r="4" class="pulse"/><text x="486" y="197" class="at">Marketing agent</text><text x="486" y="216" class="as">writes campaigns</text></g><g><rect x="470" y="270" width="146" height="60" rx="14" class="ab"/><circle cx="600" cy="284" r="4" class="pulse"/><text x="486" y="297" class="at">Support agent</text><text x="486" y="316" class="as">answers customers</text></g><circle r="5" class="sd"><animateMotion dur="2.6s" begin="0.0s" repeatCount="indefinite"><mpath href="#p0"/></animateMotion></circle><circle r="5" class="sd"><animateMotion dur="2.6s" begin="0.65s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle><circle r="5" class="sd"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle><circle r="5" class="sd"><animateMotion dur="2.6s" begin="1.9500000000000002s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle><circle r="5" class="sd"><animateMotion dur="1.8s" begin="0.4s" repeatCount="indefinite"><mpath href="#o0"/></animateMotion></circle><circle r="5" class="sd"><animateMotion dur="1.8s" begin="1.0s" repeatCount="indefinite"><mpath href="#o1"/></animateMotion></circle><circle r="5" class="sd"><animateMotion dur="1.8s" begin="1.6s" repeatCount="indefinite"><mpath href="#o2"/></animateMotion></circle>
-        </svg>
-      </div>
+      <div class="span-6 start-4 flowvis heroflow"><div class="panel"><div class="dg" data-diagram><script type="application/json">{"layout": "lanes", "alt": "An order mail goes to the AI flow, which reads the order, creates it and prepares a reply.", "input": {"label": "Inbox", "icon": "gmail", "sub": "orders@"}, "core": {"label": "AI flow", "icon": "ui:bot"}, "lanes": [{"label": "Read", "icon": "ui:file-text", "sub": "Order lines"}, {"label": "Created", "icon": "ui:database", "sub": "In your system"}, {"label": "Draft", "icon": "ui:pen-line", "sub": "Reply"}], "ground": "none"}</script></div></div></div>
       <div class="span-3 start-10 hero__cta"><a class="btn btn--primary" href="contact.html#book">Book an intro call</a></div>
     </div></div>
   </section>
@@ -238,7 +194,7 @@
     <div class="wrap">
       <div class="section-head"><h2 id="examples-h">What it looks like in practice</h2></div>
       <p class="t-lead">Three examples of work your team no longer has to do by hand.</p>
-      <div class="grid"><article class="card span-4 afl"><h3>Order flow: mail becomes order</h3><div class="afl__box" aria-hidden="true"><div class="afl__chips"><span>Customer mail</span><span>PDF attachment</span><span>Webshop order</span></div><i class="afl__ln"></i><div class="afl__ai"><b>AI flow</b><small>reads and creates the order</small></div><i class="afl__ln afl__ln--2"></i><div class="afl__chips afl__chips--out"><span>Customer found</span><span>Order lines ready</span><span>Reply as draft</span></div><div class="afl__foot"><span>You approve what is unclear</span></div></div></article><article class="card span-4 afl"><h3>Marketing agent: writes content</h3><div class="afl__box" aria-hidden="true"><div class="afl__chips"><span>Product data</span><span>Brand style</span><span>Campaign calendar</span></div><i class="afl__ln"></i><div class="afl__ai"><b>Agent</b><small>writes and schedules</small></div><i class="afl__ln afl__ln--2"></i><div class="afl__chips afl__chips--out"><span>LinkedIn post</span><span>Newsletter</span><span>Product text</span></div><div class="afl__foot"><span>You approve before publishing</span></div></div></article><article class="card span-4 afl"><h3>Lead agent: keeps working all day</h3><div class="afl__box" aria-hidden="true"><div class="afl__head"><span class="afl__name"><i></i>Lead agent</span><em>live</em></div><div class="afl__log"><div><span>1</span>Scans the customer base</div><div><span>2</span>Finds customers who have not ordered for a while</div><div><span>3</span>Writes a personal message</div><div><span>4</span>Hands the lead to sales</div></div></div></article></div>
+      <div class="grid"><article class="card span-4 exc"><h3>Inbox agent: complaints and questions</h3><div class="panel"><div class="dg" data-diagram><script type="application/json">{"layout": "lanes", "alt": "Inbox agent: complaints and questions", "input": {"label": "Inbox", "icon": "gmail", "sub": "support@"}, "core": {"label": "Agent", "icon": "ui:bot"}, "lanes": [{"label": "Sorts", "icon": "ui:list-checks", "sub": "Question"}, {"label": "Reply", "icon": "ui:pen-line", "sub": "Draft ready"}, {"label": "Passed on", "icon": "ui:share-2", "sub": "To a colleague"}], "ground": "none"}</script></div></div></article><article class="card span-4 exc"><h3>Marketing agent: writes content</h3><div class="panel"><div class="dg" data-diagram><script type="application/json">{"layout": "lanes", "alt": "Marketing agent: writes content", "input": {"label": "Product data", "icon": "ui:database", "sub": "Brand style"}, "core": {"label": "Agent", "icon": "ui:bot"}, "lanes": [{"label": "LinkedIn post", "icon": "ui:share-2", "sub": "Draft"}, {"label": "Newsletter", "icon": "gmail", "sub": "Draft"}, {"label": "Product text", "icon": "ui:pen-line", "sub": "Draft"}], "ground": "none"}</script></div></div></article><article class="card span-4 exc"><h3>Lead agent: finds opportunities</h3><div class="panel"><div class="dg" data-diagram><script type="application/json">{"layout": "lanes", "alt": "Lead agent: finds opportunities", "input": {"label": "Customer base", "icon": "hubspot", "sub": "Order history"}, "core": {"label": "Agent", "icon": "ui:bot"}, "lanes": [{"label": "Analysis", "icon": "ui:chart-column", "sub": "Lapsed buyers"}, {"label": "Leads", "icon": "ui:list-checks", "sub": "3 found"}, {"label": "Message", "icon": "ui:pen-line", "sub": "Draft"}], "ground": "none"}</script></div></div></article></div>
       <p><a class="link" href="use-cases.html">See all use cases</a></p>
     </div>
   </section>
