@@ -103,6 +103,36 @@
 .sv__out .oa-row{font:400 17px/1.4 var(--font-text);padding:10px 0}.sv__out b.good{color:#1f7a4d}.sv__out b.bad{color:#b8341c}
 .sv__qh{margin-top:var(--s-8)}.sv__q .card{display:grid;gap:var(--s-3);align-content:start}.sv__q h3{margin:0;font-size:var(--t-lead)}.sv__q p{margin:0;font-size:17px;line-height:1.55}
 </style>
+<style>
+.srcdia{align-self:center}.srcdia svg{width:100%;height:auto;display:block;overflow:visible}
+.srcdia .sb{fill:#fff;stroke:rgba(11,31,20,.18);stroke-width:1.5}.srcdia .st{font:600 17px Urbanist,sans-serif;fill:#0b1f14}
+.srcdia .sl{fill:none;stroke:#15803d;stroke-opacity:.35;stroke-width:2;stroke-dasharray:4 5}
+.srcdia .sd{fill:#22c55e;filter:drop-shadow(0 0 5px #22c55e)}
+.srcdia .ob{fill:#0b1f14;stroke:#4ade80;stroke-width:2}.srcdia .ot{font:600 16px Urbanist,sans-serif;fill:#4ade80}.srcdia .os{font:400 13px Urbanist,sans-serif;fill:#cfe9d9}
+.srcdia .ab{fill:#e8f5ee;stroke:#15803d;stroke-width:1.5}.srcdia .at{font:700 15px Urbanist,sans-serif;fill:#15803d;text-transform:uppercase;letter-spacing:.06em}.srcdia .as{font:400 14px Urbanist,sans-serif;fill:#0b1f14}
+.srcdia .pulse{fill:#22c55e;animation:pls 1.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pls{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.8);opacity:.45}}
+.afl{display:grid;gap:var(--s-4);align-content:start}.afl h3{margin:0;font-size:var(--t-lead)}
+.afl__box{background:linear-gradient(180deg,#f1f7f3,#fff);border:1px solid rgba(21,128,61,.22);border-radius:18px;padding:14px 10px}
+.afl__row{display:flex;align-items:center}
+.afl__col{flex:1 1 0;min-width:0;display:grid;gap:6px}.afl__col span{background:#fff;border:1px solid rgba(11,31,20,.14);border-radius:10px;padding:7px 6px;font-size:12.5px;font-weight:600;text-align:center;line-height:1.2;color:#0b1f14}
+.afl__col--out span{background:#e8f5ee;border-color:#15803d}
+.afl__ai{flex:1.1 1 0;background:#0b1f14;color:#fff;border-radius:14px;padding:14px 6px;text-align:center;animation:aib 2.4s ease-in-out infinite}
+.afl__ai b{display:block;color:#4ade80;font-size:12px;text-transform:uppercase;letter-spacing:.06em}.afl__ai small{display:block;font-size:11.5px;color:#cfe9d9;margin-top:3px;line-height:1.25}
+@keyframes aib{0%,100%{box-shadow:0 0 0 3px rgba(74,222,128,.2)}50%{box-shadow:0 0 0 7px rgba(74,222,128,.45)}}
+.afl__ln{flex:0 0 26px;height:2px;background:rgba(21,128,61,.35);position:relative;margin:0 2px}
+.afl__ln::after{content:"";position:absolute;top:-4px;left:0;width:10px;height:10px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;animation:run 1.6s linear infinite}
+.afl__ln--2::after{animation-delay:.8s}
+@keyframes run{0%{left:0;opacity:0}15%{opacity:1}85%{opacity:1}100%{left:calc(100% - 10px);opacity:0}}
+.afl__foot{margin-top:10px;text-align:center}.afl__foot span{display:inline-block;font-size:13px;font-weight:600;color:#15803d;background:#e3f2e9;border-radius:999px;padding:5px 12px}
+.afl__log{display:grid;gap:8px}.afl__log div{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(11,31,20,.14);border-radius:10px;padding:9px 12px;font-size:14px;font-weight:600;color:#0b1f14;opacity:.5;animation:lg 8s linear infinite}
+.afl__log div::before{content:"";width:9px;height:9px;border-radius:50%;background:#22c55e;flex:none}
+.afl__log div:nth-child(2){animation-delay:2s}.afl__log div:nth-child(3){animation-delay:4s}.afl__log div:nth-child(4){animation-delay:6s}
+@keyframes lg{0%,22%{opacity:1;border-color:#15803d;background:#e8f5ee}27%,100%{opacity:.5;border-color:rgba(11,31,20,.14);background:#fff}}
+.afl__head{display:flex;align-items:center;gap:10px;color:#0b1f14;font-weight:700;font-size:14px;margin-bottom:10px}.afl__head i{width:10px;height:10px;border-radius:50%;background:#22c55e;animation:pls2 1.2s ease-in-out infinite}
+@keyframes pls2{50%{transform:scale(1.7);opacity:.5}}
+@media (prefers-reduced-motion:reduce){.srcdia .pulse,.afl__ln::after,.afl__ai,.afl__log div,.afl__head i{animation:none}}
+</style>
 </head>
 <body>
 <header class="nav">
@@ -152,31 +182,14 @@
         <h1 id="hero-h">Want AI, but no results yet?</h1>
         <p class="hero__lead">Most companies don't know where to start with AI, or don't get the results they want. Our platform is built for AI. Flows and agents do the work automatically.</p>
       </div>
-      <div class="ly-collage span-6 start-4" role="img" aria-label="A mail comes in, an AI agent in a flow processes it and writes to one source of truth. All flows and agents then read from that same source.">
-        <div class="ly-collage__set is-on">
-          <div class="ly-piece pc-mail" style="left: 4%; top: 6%; width: 58%">
-            <span class="lbl">Inbox</span>
-            <b>Quote request</b>
-            <p>Can you send us a proposal for next month?</p>
-          </div>
-          <div class="ly-piece pc-order" style="left: 38%; top: 38%; width: 58%">
-            <span class="lbl">Automatic: AI flow with agent</span>
-            <div class="ln"><span>Agent reads the mail</span><em>Done</em></div><div class="ln"><span>Customer found in the source</span><em>Done</em></div><div class="ln"><span>Reply written</span><em>Draft</em></div>
-          </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 56%"><i></i>Flow done: everything in one source, you approve</div>
-        </div>
-        <div class="ly-collage__set" aria-hidden="true">
-          <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
-            <span class="lbl">One source of truth</span>
-            <div class="ln"><span>Mail</span><b>Same record</b></div><div class="ln"><span>Webshop</span><b>Same record</b></div><div class="ln"><span>CRM</span><b>Same record</b></div><div class="ln"><span>Files</span><b>Same record</b></div>
-            <div class="ln"><span></span><em>1 record</em></div>
-          </div>
-          <div class="ly-piece pc-sync" style="left: 38%; top: 50%; width: 58%">
-            <span class="lbl">Flows and agents read the source</span>
-            <div class="ln"><span>Mail agent</span><em>Reads the source</em></div><div class="ln"><span>Content agent</span><em>Reads the source</em></div>
-          </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 86%; width: 46%"><i></i>One source, ready for AI</div>
-        </div>
+      <div class="span-6 start-4 srcdia" role="img" aria-label="Several sources (Exact, HubSpot, Shopify, Gmail) flow into one source of truth, the CRM. The AI flow and agents work from that one source.">
+        <svg viewBox="0 0 580 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path id="p0" d="M130 48 C 190 48, 170 168, 230 168" class="sl"/><path id="p1" d="M130 128 C 190 128, 170 168, 230 168" class="sl"/><path id="p2" d="M130 208 C 190 208, 170 168, 230 168" class="sl"/><path id="p3" d="M130 288 C 190 288, 170 168, 230 168" class="sl"/><g><rect x="0" y="20" width="130" height="56" rx="12" class="sb"/><text x="65" y="54" text-anchor="middle" class="st">Exact</text></g><g><rect x="0" y="100" width="130" height="56" rx="12" class="sb"/><text x="65" y="134" text-anchor="middle" class="st">HubSpot</text></g><g><rect x="0" y="180" width="130" height="56" rx="12" class="sb"/><text x="65" y="214" text-anchor="middle" class="st">Shopify</text></g><g><rect x="0" y="260" width="130" height="56" rx="12" class="sb"/><text x="65" y="294" text-anchor="middle" class="st">Gmail</text></g>
+          <g><rect x="230" y="108" width="140" height="120" rx="18" class="ob"/><text x="300" y="150" text-anchor="middle" class="ot">One source of truth</text><text x="300" y="176" text-anchor="middle" class="os">CRM, customer and product</text><circle cx="300" cy="204" r="6" class="pulse"/></g>
+          <g><rect x="440" y="52" width="140" height="76" rx="14" class="ab"/><text x="510" y="86" text-anchor="middle" class="at">AI flow</text><text x="510" y="108" text-anchor="middle" class="as">processes orders</text></g>
+          <g><rect x="440" y="208" width="140" height="76" rx="14" class="ab"/><text x="510" y="242" text-anchor="middle" class="at">Agent</text><text x="510" y="264" text-anchor="middle" class="as">always working</text><circle cx="568" cy="220" r="5" class="pulse"/></g>
+          <circle r="6" class="sd"><animateMotion dur="2.8s" begin="0.0s" repeatCount="indefinite"><mpath href="#p0"/></animateMotion></circle><circle r="6" class="sd"><animateMotion dur="2.8s" begin="0.7s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle><circle r="6" class="sd"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle><circle r="6" class="sd"><animateMotion dur="2.8s" begin="2.0999999999999996s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle><path id="o0" d="M370 168 C 410 168, 400 90, 440 90" class="sl"/><path id="o1" d="M370 168 C 410 168, 400 246, 440 246" class="sl"/><circle r="6" class="sd"><animateMotion dur="2s" begin="0.3s" repeatCount="indefinite"><mpath href="#o0"/></animateMotion></circle><circle r="6" class="sd"><animateMotion dur="2s" begin="1.3s" repeatCount="indefinite"><mpath href="#o1"/></animateMotion></circle>
+        </svg>
       </div>
       <div class="span-3 start-10 hero__cta"><a class="btn btn--primary" href="contact.html#book">Book an intro call</a></div>
     </div></div>
@@ -218,7 +231,7 @@
     <div class="wrap">
       <div class="section-head"><h2 id="examples-h">What it looks like in practice</h2></div>
       <p class="t-lead">Three examples of work your team no longer has to do by hand.</p>
-      <div class="grid"><article class="card span-4 exc"><h3>An order by mail becomes an order in the system</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">New order from mail</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Read</span></div><div class="oa-row"><span>Mail</span><b>Received</b></div><div class="oa-row"><span>AI reads</span><b>Customer and products</b></div><div class="oa-row"><span>The system</span><b>Order created</b></div><div class="oa-row"><span>Customer</span><b>Confirmation ready</b></div></div></article><article class="card span-4 exc"><h3>Complaints get an answer straight away</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Inbox</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Sorted</span></div><div class="oa-row"><span>Complaint</span><b>Answer ready</b></div><div class="oa-row"><span>Question</span><b>Answered</b></div><div class="oa-row"><span>Hard case</span><b>To a colleague</b></div><div class="oa-row"><span>You</span><b>Approve</b></div></div></article><article class="card span-4 exc"><h3>Content and leads write themselves</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Agents</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">This week</span></div><div class="oa-row"><span>Product data</span><b>Read</b></div><div class="oa-row"><span>Product text</span><b>Draft ready</b></div><div class="oa-row"><span>Customer base</span><b>3 promising leads</b></div><div class="oa-row"><span>Next step</span><b>Call this week</b></div></div></article></div>
+      <div class="grid"><article class="card span-4 afl"><h3>A flow: an order by mail becomes an order</h3><div class="afl__box" aria-hidden="true"><div class="afl__row"><div class="afl__col"><span>Customer mail</span><span>PDF attachment</span><span>Webshop order</span></div><i class="afl__ln"></i><div class="afl__ai"><b>AI flow</b><small>reads and creates the order</small></div><i class="afl__ln afl__ln--2"></i><div class="afl__col afl__col--out"><span>Customer found</span><span>Order lines ready</span><span>Reply as draft</span></div></div><div class="afl__foot"><span>You approve what is unclear</span></div></div></article><article class="card span-4 afl"><h3>A flow: the inbox sorts itself</h3><div class="afl__box" aria-hidden="true"><div class="afl__row"><div class="afl__col"><span>Question</span><span>Complaint</span><span>Order</span></div><i class="afl__ln"></i><div class="afl__ai"><b>Agent</b><small>sorts and writes</small></div><i class="afl__ln afl__ln--2"></i><div class="afl__col afl__col--out"><span>Reply ready</span><span>To a colleague</span><span>Order created</span></div></div><div class="afl__foot"><span>You decide what may run automatically</span></div></div></article><article class="card span-4 afl"><h3>An agent: keeps working all day</h3><div class="afl__box"><div class="afl__head"><i></i>Content and lead agent, working</div><div class="afl__log" aria-hidden="true"><div>Reads product and customer data from the source</div><div>Writes product text as a draft</div><div>Finds promising leads</div><div>Waits for your approval</div></div></div></article></div>
       <p><a class="link" href="use-cases.html">See all use cases</a></p>
     </div>
   </section>
