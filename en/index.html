@@ -96,6 +96,13 @@
 #what p:last-child,#examples p:last-child{margin-top:var(--s-6)}
 #cost .card{display:grid;gap:var(--s-3);align-content:start}#cost .card h3{margin:0;font-size:var(--t-lead)}
 </style>
+<style>
+.sv__in{display:grid;gap:var(--s-5);align-content:start}.sv__in label{display:grid;gap:var(--s-2);font-size:17px}.sv__in input{width:100%;accent-color:var(--p-accent)}
+.sv__out{display:grid;gap:var(--s-3);align-content:start}.sv__out p{margin:0}.sv__big{font-size:clamp(44px,7vw,84px);line-height:1;letter-spacing:-.04em;font-weight:500;color:var(--p-accent)}
+.sv__hours{font-size:17px}.sv__bar{height:10px;border-radius:99px;background:rgb(11 31 20/.1);overflow:hidden}.sv__bar i{display:block;height:100%;background:var(--p-accent);border-radius:99px;transition:width .3s}
+.sv__out .oa-row{font:400 17px/1.4 var(--font-text);padding:10px 0}.sv__out b.good{color:#1f7a4d}.sv__out b.bad{color:#b8341c}
+.sv__qh{margin-top:var(--s-8)}.sv__q .card{display:grid;gap:var(--s-3);align-content:start}.sv__q h3{margin:0;font-size:var(--t-lead)}.sv__q p{margin:0;font-size:17px;line-height:1.55}
+</style>
 </head>
 <body>
 <header class="nav">
@@ -143,32 +150,32 @@
     <div class="wrap"><div class="hero-text grid hero__grid">
       <div class="span-3">
         <h1 id="hero-h">Want AI, but no results yet?</h1>
-        <p class="hero__lead">Most companies don't know where to start with AI, or don't get the results they want. Our platform is built for AI.</p>
+        <p class="hero__lead">Most companies don't know where to start with AI, or don't get the results they want. Our platform is built for AI. Flows and agents do the work automatically.</p>
       </div>
-      <div class="ly-collage span-6 start-4" role="img" aria-label="An AI flow with an agent processes an order mail and writes the order to one source of truth. ERP, webshop and CRM then show the same data.">
+      <div class="ly-collage span-6 start-4" role="img" aria-label="A mail comes in, an AI agent in a flow processes it and writes to one source of truth. All flows and agents then read from that same source.">
         <div class="ly-collage__set is-on">
           <div class="ly-piece pc-mail" style="left: 4%; top: 6%; width: 58%">
-            <span class="lbl">Inbox · orders@</span>
-            <b>Order for oak planks</b>
-            <p>Can you deliver 40 planks and 12 brackets?</p>
+            <span class="lbl">Inbox</span>
+            <b>Quote request</b>
+            <p>Can you send us a proposal for next month?</p>
           </div>
           <div class="ly-piece pc-order" style="left: 38%; top: 38%; width: 58%">
-            <span class="lbl">AI agent in the flow</span>
-            <div class="ln"><span>Agent reads and recognises customer</span><em>Done</em></div><div class="ln"><span>Oak plank 80 cm &times; 40</span><em>&euro;89.00</em></div><div class="ln"><span>Wall bracket &times; 12</span><em>&euro;4.50</em></div>
+            <span class="lbl">Automatic: AI flow with agent</span>
+            <div class="ln"><span>Agent reads the mail</span><em>Done</em></div><div class="ln"><span>Customer found in the source</span><em>Done</em></div><div class="ln"><span>Reply written</span><em>Draft</em></div>
           </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 56%"><i></i>Flow done: order in the source, reply ready</div>
+          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 56%"><i></i>Flow done: everything in one source, you approve</div>
         </div>
         <div class="ly-collage__set" aria-hidden="true">
           <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
             <span class="lbl">One source of truth</span>
-            <div class="ln"><span>ERP</span><b>Same record</b></div><div class="ln"><span>Webshop</span><b>Same record</b></div><div class="ln"><span>CRM</span><b>Same record</b></div>
+            <div class="ln"><span>Mail</span><b>Same record</b></div><div class="ln"><span>Webshop</span><b>Same record</b></div><div class="ln"><span>CRM</span><b>Same record</b></div><div class="ln"><span>Files</span><b>Same record</b></div>
             <div class="ln"><span></span><em>1 record</em></div>
           </div>
-          <div class="ly-piece pc-sync" style="left: 38%; top: 46%; width: 58%">
-            <span class="lbl">Agents work on that source</span>
-            <div class="ln"><span>Order agent</span><em>Reads the source</em></div><div class="ln"><span>Content agent</span><em>Reads the source</em></div>
+          <div class="ly-piece pc-sync" style="left: 38%; top: 50%; width: 58%">
+            <span class="lbl">Flows and agents read the source</span>
+            <div class="ln"><span>Mail agent</span><em>Reads the source</em></div><div class="ln"><span>Content agent</span><em>Reads the source</em></div>
           </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 84%; width: 46%"><i></i>One source, ready for AI</div>
+          <div class="ly-piece pc-pill" style="left: 4%; top: 86%; width: 46%"><i></i>One source, ready for AI</div>
         </div>
       </div>
       <div class="span-3 start-10 hero__cta"><a class="btn btn--primary" href="contact.html#book">Book an intro call</a></div>
@@ -198,12 +205,7 @@
       <div class="grid grid--top fill">
         <div class="span-5 stack-5">
           <div class="section-head"><h2 id="flows-h">AI flows and agents that do the work.</h2></div>
-          <p class="t-lead">They read orders and mail, write content, spot leads and run internal apps, instead of expensive software. They work because we first align your data across every system, so AI understands it.</p>
-          <ul class="pts">
-            <li>Flows that read orders and answer mail</li>
-            <li>Agents that write content and find leads</li>
-            <li>Apps for HR and more, instead of costly software</li>
-          </ul>
+          <p class="t-lead">They work automatically, because we first align your data across every system, so AI understands it. You see examples below.</p>
           <a class="link" href="use-cases.html">See the use cases</a>
         </div>
         <div class="span-6 start-7 flowvis">
@@ -216,7 +218,7 @@
     <div class="wrap">
       <div class="section-head"><h2 id="examples-h">What it looks like in practice</h2></div>
       <p class="t-lead">Three examples of work your team no longer has to do by hand.</p>
-      <div class="grid"><article class="card span-4 exc"><h3>An order by mail becomes an order in the system</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">New order from mail</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Read</span></div><div class="oa-row"><span>Mail</span><b>Received</b></div><div class="oa-row"><span>AI reads</span><b>40 planks, 12 brackets</b></div><div class="oa-row"><span>The ERP</span><b>Order created</b></div><div class="oa-row"><span>Customer</span><b>Confirmation ready</b></div></div></article><article class="card span-4 exc"><h3>Complaints get an answer straight away</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Inbox</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Sorted</span></div><div class="oa-row"><span>Complaint</span><b>Answer ready</b></div><div class="oa-row"><span>Question</span><b>Answered</b></div><div class="oa-row"><span>Hard case</span><b>To a colleague</b></div><div class="oa-row"><span>You</span><b>Approve</b></div></div></article><article class="card span-4 exc"><h3>Content and leads write themselves</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Agents</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">This week</span></div><div class="oa-row"><span>Product data</span><b>Read</b></div><div class="oa-row"><span>Product text</span><b>Draft ready</b></div><div class="oa-row"><span>Customer base</span><b>3 promising leads</b></div><div class="oa-row"><span>Next step</span><b>Call this week</b></div></div></article></div>
+      <div class="grid"><article class="card span-4 exc"><h3>An order by mail becomes an order in the system</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">New order from mail</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Read</span></div><div class="oa-row"><span>Mail</span><b>Received</b></div><div class="oa-row"><span>AI reads</span><b>Customer and products</b></div><div class="oa-row"><span>The system</span><b>Order created</b></div><div class="oa-row"><span>Customer</span><b>Confirmation ready</b></div></div></article><article class="card span-4 exc"><h3>Complaints get an answer straight away</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Inbox</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Sorted</span></div><div class="oa-row"><span>Complaint</span><b>Answer ready</b></div><div class="oa-row"><span>Question</span><b>Answered</b></div><div class="oa-row"><span>Hard case</span><b>To a colleague</b></div><div class="oa-row"><span>You</span><b>Approve</b></div></div></article><article class="card span-4 exc"><h3>Content and leads write themselves</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Agents</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">This week</span></div><div class="oa-row"><span>Product data</span><b>Read</b></div><div class="oa-row"><span>Product text</span><b>Draft ready</b></div><div class="oa-row"><span>Customer base</span><b>3 promising leads</b></div><div class="oa-row"><span>Next step</span><b>Call this week</b></div></div></article></div>
       <p><a class="link" href="use-cases.html">See all use cases</a></p>
     </div>
   </section>
@@ -225,8 +227,8 @@
       <div class="section-head"><h2 id="ba-h">Before and after Moiz AI</h2></div>
       <p class="t-lead">The same company, the same people. But the work runs differently.</p>
       <div class="grid">
-        <article class="card span-6 ba ba--before"><h3>Before</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="oa-row"><span>Order by mail</span><b class="bad">Typed in by hand</b></div><div class="oa-row"><span>Price in ERP and webshop</span><b class="bad">Differs</b></div><div class="oa-row"><span>Customer in three systems</span><b class="bad">Three versions</b></div><div class="oa-row"><span>Complaint in the inbox</span><b class="bad">Waits for days</b></div></div></article>
-        <article class="card span-6 ba ba--after"><h3>After</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="oa-row"><span>Order by mail</span><b class="good">Created by AI</b></div><div class="oa-row"><span>Price in ERP and webshop</span><b class="good">Same everywhere</b></div><div class="oa-row"><span>Customer in three systems</span><b class="good">One record</b></div><div class="oa-row"><span>Complaint in the inbox</span><b class="good">Answer ready for approval</b></div></div></article>
+        <article class="card span-6 ba ba--before"><h3>Before</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="oa-row"><span>Order by mail</span><b class="bad">Typed in by hand</b></div><div class="oa-row"><span>Price in your systems</span><b class="bad">Differs</b></div><div class="oa-row"><span>Customer in three systems</span><b class="bad">Three versions</b></div><div class="oa-row"><span>Complaint in the inbox</span><b class="bad">Waits for days</b></div></div></article>
+        <article class="card span-6 ba ba--after"><h3>After</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="oa-row"><span>Order by mail</span><b class="good">Created by AI</b></div><div class="oa-row"><span>Price in your systems</span><b class="good">Same everywhere</b></div><div class="oa-row"><span>Customer in three systems</span><b class="good">One record</b></div><div class="oa-row"><span>Complaint in the inbox</span><b class="good">Answer ready for approval</b></div></div></article>
       </div>
     </div>
   </section>
@@ -247,9 +249,9 @@
       </div>
       <div class="grid">
         <article class="card card--row card--open span-6">
-          <h3>Keeps product data in sync</h3>
-          <p>A price changed in the ERP is the same price in the webshop and the CRM.</p>
-          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "sync", "alt": "The ERP and the webshop keep products and customers in sync both ways.", "left": {"label": "ERP", "icon": "ui:database", "meta": "Source", "rows": [{"label": "Products", "meta": "Name, price"}, {"label": "Customers", "meta": "Address"}, {"label": "Orders", "meta": "Status"}]}, "link": {"label": "One record", "icon": "ui:refresh-cw"}, "right": {"label": "Webshop", "icon": "shopify", "meta": "Live", "rows": [{"label": "Products", "meta": "Name, price"}, {"label": "Customers", "meta": "Address"}, {"label": "Orders", "meta": "Status"}]}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
+          <h3>All flows and agents read from one source</h3>
+          <p>You change something once. Every flow, agent, app and dashboard sees the same.</p>
+          <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "sync", "alt": "One source of truth keeps all systems and agents the same.", "left": {"label": "One source", "icon": "ui:database", "meta": "Source", "rows": [{"label": "Customers", "meta": ""}, {"label": "Products", "meta": ""}, {"label": "Files", "meta": ""}]}, "link": {"label": "1 record", "icon": "ui:refresh-cw"}, "right": {"label": "Flows and agents", "icon": "ui:bot", "meta": "Live", "rows": [{"label": "Customers", "meta": ""}, {"label": "Products", "meta": ""}, {"label": "Files", "meta": ""}]}, "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
         </article>
         <article class="card card--row card--open span-6">
           <h3>Pulls every source into one product record</h3>
@@ -308,8 +310,8 @@
             <div class="ui ui-panel ui-orderapp">
               <div class="ui-head"><div class="ui-title">New order</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Draft</span></div>
               <div class="oa-row"><span>Customer</span><b>Van den Berg Interieur</b></div>
-              <div class="oa-row"><span>Oak shelf 80 cm</span><b>40 &times; &euro;89,00</b></div>
-              <div class="oa-row"><span>Wall bracket</span><b>12 &times; &euro;4,50</b></div>
+              <div class="oa-row"><span>Product A</span><b>40 &times; &euro;89,00</b></div>
+              <div class="oa-row"><span>Product B</span><b>12 &times; &euro;4,50</b></div>
               <div class="oa-row oa-total"><span>Total</span><b>&euro;3.614,00</b></div>
               <div class="oa-btn">Place order</div>
             </div>
@@ -337,13 +339,46 @@
       </div>
     </div>
   </section>
+  <section class="section ground-surface" id="savings" aria-labelledby="savings-h" data-loc="en-GB">
+    <div class="wrap">
+      <div class="section-head"><h2 id="savings-h">What a flow earns you over a year</h2></div>
+      <p class="t-lead">A flow that takes over a few hours a week adds up over a year. Fill in what applies to your company. This is an example calculation, not a quote.</p>
+      <div class="grid sv">
+        <div class="card span-5 sv__in">
+          <label>Number of flows and agents: <b id="sv-n-o">4</b><input id="sv-n" type="range" min="1" max="10" value="4"></label>
+          <label>Hours saved per week per flow: <b id="sv-h-o">5</b><input id="sv-h" type="range" min="1" max="20" value="5"></label>
+          <label>Hourly cost of your people: <b id="sv-r-o">50</b><input id="sv-r" type="range" min="25" max="120" step="5" value="50"></label>
+        </div>
+        <div class="card span-7 sv__out" aria-live="polite">
+          <p class="t-small muted">Saved per year</p>
+          <p class="sv__big" id="sv-save">&euro;46.000</p>
+          <p class="sv__hours"><b id="sv-hrs">920</b> hours back for your team</p>
+          <div class="sv__bar"><i id="sv-bar"></i></div>
+          <div class="oa-row"><span>Moiz AI Pro per year</span><b>&euro;18.000</b></div>
+          <div class="oa-row"><span>Net benefit per year</span><b class="good" id="sv-net">&euro;28.000</b></div>
+          <p class="t-small muted">Calculated with 46 working weeks. Pro costs &euro;1,500 a month. Extra benefit: fewer mistakes, see below.</p>
+        </div>
+      </div>
+      <div class="section-head sv__qh"><h2>One source of truth means better quality</h2></div>
+      <div class="grid sv__q"><article class="card span-4"><h3>No retyping mistakes</h3><p>Orders, prices and customer data are no longer copied by hand, so errors do not creep in.</p></article><article class="card span-4"><h3>The same numbers everywhere</h3><p>Every system, flow and agent reads from the same source. No more debate about which version is right.</p></article><article class="card span-4"><h3>Reliable AI output</h3><p>AI is only as good as the data it reads. If the source is right, the answer, the quote and the text are right.</p></article></div>
+    </div>
+  </section>
+  <script>
+  (function(){try{var s=document.getElementById('savings'),loc=s.dataset.loc,f=function(v){return '\u20ac'+Math.round(v).toLocaleString(loc)},
+  g=function(i){return document.getElementById(i)};
+  function u(){var n=+g('sv-n').value,h=+g('sv-h').value,r=+g('sv-r').value,hrs=n*h*46,sv=hrs*r,cost=18000;
+  g('sv-n-o').textContent=n;g('sv-h-o').textContent=h;g('sv-r-o').textContent=f(r).replace('\u20ac','')+' \u20ac/h'.replace('\u20ac/h','');
+  g('sv-r-o').textContent='\u20ac'+r;g('sv-hrs').textContent=hrs.toLocaleString(loc);g('sv-save').textContent=f(sv);g('sv-net').textContent=f(sv-cost);
+  g('sv-net').className=sv-cost>=0?'good':'bad';g('sv-bar').style.width=Math.min(100,Math.max(4,cost/Math.max(sv,1)*100))+'%'}
+  ['sv-n','sv-h','sv-r'].forEach(function(i){g(i).addEventListener('input',u)});u()}catch(e){}})();
+  </script>
   <section class="section" id="cost" aria-labelledby="cost-h">
     <div class="wrap">
       <div class="section-head"><h2 id="cost-h">One fixed amount instead of separate costs</h2></div>
       <p class="t-lead">Without Moiz AI you pay in several places. With Moiz AI you pay one amount a month for the whole thing.</p>
       <div class="grid">
         <article class="card span-6"><h3>Normally you pay for</h3><ul class="pts"><li>Separate software with a licence per user</li><li>Employees losing hours to data entry</li><li>Mistakes that have to be corrected afterwards</li><li>External parties for integrations and custom work</li></ul></article>
-        <article class="card span-6"><h3>With Moiz AI you pay</h3><p class="t-stat">&euro;1,500 a month</p><p class="t-small muted">with Pro, for the whole thing: data, flows, agents, apps and dashboards, with unlimited users.</p><ul class="pts"><li>You save time, because AI does the routine work</li><li>Your people work more efficiently on work that matters</li><li>You make fewer mistakes, because everything comes from the same data</li></ul><a class="link" href="pricing.html">Compare the plans</a></article>
+        <article class="card span-6"><h3>With Moiz AI you pay</h3><p class="t-stat">&euro;1,500 a month</p><p class="t-small muted">with Pro, for the whole thing: data, flows, agents, apps and dashboards, with unlimited users.</p><ul class="pts"><li>You save time</li><li>Your people work more efficiently on work that matters</li><li>You make fewer mistakes</li></ul><a class="link" href="pricing.html">Compare the plans</a></article>
       </div>
     </div>
   </section>
