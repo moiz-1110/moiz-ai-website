@@ -87,6 +87,15 @@
 <link rel="alternate" hreflang="nl" href="index.html">
 <link rel="alternate" hreflang="en" href="en/index.html">
 <link rel="alternate" hreflang="x-default" href="index.html">
+<style>
+.ba .oa-row b.bad{color:#b8341c}.ba .oa-row b.good{color:#1f7a4d}
+.ba h3,.exc h3{margin:0 0 var(--s-3);font-size:var(--t-lead)}
+.exc{display:grid;gap:var(--s-4);align-content:start}.exc h3{margin:0}
+#what .card{display:grid;gap:var(--s-3);align-content:start}#what .card h3{margin:0;font-size:var(--t-lead)}#what .card p{margin:0;font-size:17px;line-height:1.55}
+#what .t-lead,#examples .t-lead,#beforeafter .t-lead,#cost .t-lead,#clients .t-lead{margin:0 0 var(--s-6)}
+#what p:last-child,#examples p:last-child{margin-top:var(--s-6)}
+#cost .card{display:grid;gap:var(--s-3);align-content:start}#cost .card h3{margin:0;font-size:var(--t-lead)}
+</style>
 </head>
 <body>
 <header class="nav">
@@ -114,6 +123,7 @@
           </div>
         </div>
       </div>
+      <div class="nav__item"><a class="nav__link" href="about.html">Wat is Moiz AI</a></div>
       <div class="nav__item"><a class="nav__link" href="use-cases.html">Toepassingen</a></div>
       <div class="nav__item"><a class="nav__link" href="pricing.html">Prijzen</a></div>
       <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
@@ -135,35 +145,42 @@
         <h1 id="hero-h">Wil je AI, maar nog geen resultaat?</h1>
         <p class="hero__lead">De meeste bedrijven weten niet waar ze met AI moeten beginnen, of krijgen niet de resultaten die ze willen. Ons platform is gebouwd voor AI.</p>
       </div>
-      <div class="ly-collage span-6 start-4" role="img" aria-label="The same price in the ERP and the webshop, and a dashboard that shows the work done by AI agents">
+      <div class="ly-collage span-6 start-4" role="img" aria-label="Een AI-flow met een agent verwerkt een ordermail en schrijft de order naar één bron van waarheid. ERP, webshop en CRM tonen daarna dezelfde data.">
         <div class="ly-collage__set is-on">
-          <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
-            <span class="lbl">ERP</span>
-            <div class="ln"><span>Eiken plank 80 cm</span><b>&euro;89,00</b></div>
-            <div class="ln"><span>Op voorraad</span><b>212</b></div>
+          <div class="ly-piece pc-mail" style="left: 4%; top: 6%; width: 58%">
+            <span class="lbl">Inbox · orders@</span>
+            <b>Bestelling eiken planken</b>
+            <p>Kunnen jullie 40 planken en 12 beugels leveren?</p>
           </div>
-          <div class="ly-piece pc-sync" style="left: 38%; top: 40%; width: 58%">
-            <span class="lbl">Webshop</span>
-            <div class="ln"><span>Eiken plank 80 cm</span><b>&euro;89,00</b></div>
-            <div class="ln"><span>Op voorraad</span><b>212</b></div>
+          <div class="ly-piece pc-order" style="left: 38%; top: 38%; width: 58%">
+            <span class="lbl">AI-agent in de flow</span>
+            <div class="ln"><span>Agent leest en herkent klant</span><em>Gedaan</em></div><div class="ln"><span>Eiken plank 80 cm &times; 40</span><em>&euro;89,00</em></div><div class="ln"><span>Wandbeugel &times; 12</span><em>&euro;4,50</em></div>
           </div>
-          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 50%"><i></i>Overal dezelfde data</div>
+          <div class="ly-piece pc-pill" style="left: 4%; top: 80%; width: 56%"><i></i>Flow klaar: order in de bron, antwoord klaar</div>
         </div>
         <div class="ly-collage__set" aria-hidden="true">
-          <div class="ly-piece pc-dash" style="left: 4%; top: 6%; width: 74%">
-            <span class="lbl">Deze week</span>
-            <b>Gedaan door AI-agents</b>
-            <div class="bars"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:88%"></i></div>
+          <div class="ly-piece pc-sync" style="left: 4%; top: 6%; width: 58%">
+            <span class="lbl">Eén bron van waarheid</span>
+            <div class="ln"><span>ERP</span><b>Zelfde record</b></div><div class="ln"><span>Webshop</span><b>Zelfde record</b></div><div class="ln"><span>CRM</span><b>Zelfde record</b></div>
+            <div class="ln"><span></span><em>1 record</em></div>
           </div>
-          <div class="ly-piece pc-role" style="left: 40%; top: 56%; width: 56%">
-            <span class="lbl">Verkoop</span>
-            <div class="ln"><span>Orders</span><em>Zichtbaar</em></div>
-            <div class="ln"><span>Omzet</span><em class="off">Verborgen</em></div>
+          <div class="ly-piece pc-sync" style="left: 38%; top: 46%; width: 58%">
+            <span class="lbl">Agents werken op die bron</span>
+            <div class="ln"><span>Order-agent</span><em>Leest de bron</em></div><div class="ln"><span>Content-agent</span><em>Leest de bron</em></div>
           </div>
+          <div class="ly-piece pc-pill" style="left: 4%; top: 84%; width: 46%"><i></i>Eén bron, klaar voor AI</div>
         </div>
       </div>
       <div class="span-3 start-10 hero__cta"><a class="btn btn--primary" href="contact.html#book">Plan een kennismaking</a></div>
     </div></div>
+  </section>
+  <section class="section" id="what" aria-labelledby="what-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="what-h">Wat is Moiz AI? <span class="muted">In gewone taal.</span></h2></div>
+      <p class="t-lead">De IT-partner regelde je netwerk. Wij regelen je AI. Moiz AI zorgt dat je bedrijf met AI kan werken en houdt het daarna draaiende.</p>
+      <div class="grid wgrid"><article class="card span-4"><h3>1. Je systemen gaan met elkaar praten</h3><p>Ons platform verbindt je ERP, webshop, mail en klantgegevens. Overal staat dezelfde informatie.</p></article><article class="card span-4"><h3>2. AI gaat het werk doen</h3><p>Orders inlezen, mail beantwoorden, teksten schrijven. Slimme assistenten nemen dit werk uit handen.</p></article><article class="card span-4"><h3>3. Wij beheren het voor je</h3><p>Je hoeft er zelf niets voor te kunnen. Wij bouwen, houden het werkend en passen het aan.</p></article></div>
+      <p><a class="link" href="about.html">Lees meer: wat is Moiz AI en hoe helpen we jouw organisatie</a></p>
+    </div>
   </section>
   <section class="section ground-surface" id="who" aria-labelledby="who-h">
     <div class="wrap">
@@ -192,6 +209,24 @@
         <div class="span-6 start-7 flowvis">
           <div class="panel"><div class="dg" data-diagram data-dg-still><script type="application/json">{"layout": "hub", "alt": "Moiz AI in het midden, gekoppeld aan ERP, CRM, webshop, mail en spreadsheets.", "center": {"label": "Moiz AI", "icon": "ui:bot"}, "spokes": [{"label": "Gmail", "icon": "gmail"}, {"label": "HubSpot", "icon": "hubspot"}, {"label": "Shopify", "icon": "shopify"}, {"label": "Google Sheets", "icon": "google-sheets"}, {"label": "ERP", "icon": "ui:database"}], "ground": "none", "motion": {"pulse": "none"}}</script></div></div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="section ground-surface" id="examples" aria-labelledby="examples-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="examples-h">Zo ziet het eruit in de praktijk</h2></div>
+      <p class="t-lead">Drie voorbeelden van wat je team niet meer met de hand hoeft te doen.</p>
+      <div class="grid"><article class="card span-4 exc"><h3>Order per mail wordt order in het systeem</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Nieuwe order uit mail</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Gelezen</span></div><div class="oa-row"><span>Mail</span><b>Binnengekomen</b></div><div class="oa-row"><span>AI leest</span><b>40 planken, 12 beugels</b></div><div class="oa-row"><span>Het ERP</span><b>Order aangemaakt</b></div><div class="oa-row"><span>Klant</span><b>Bevestiging klaar</b></div></div></article><article class="card span-4 exc"><h3>Klachten krijgen direct een antwoord</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Inbox</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Gesorteerd</span></div><div class="oa-row"><span>Klacht</span><b>Antwoord klaar</b></div><div class="oa-row"><span>Vraag</span><b>Beantwoord</b></div><div class="oa-row"><span>Lastig geval</span><b>Naar een medewerker</b></div><div class="oa-row"><span>Jij</span><b>Keurt goed</b></div></div></article><article class="card span-4 exc"><h3>Content en leads schrijven zichzelf</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="ui-head"><div class="ui-title">Agents</div><span class="ui-spacer"></span><span class="ui-chip ui-chip--plain">Deze week</span></div><div class="oa-row"><span>Productdata</span><b>Gelezen</b></div><div class="oa-row"><span>Producttekst</span><b>Concept klaar</b></div><div class="oa-row"><span>Klantenbestand</span><b>3 kansrijke leads</b></div><div class="oa-row"><span>Volgende stap</span><b>Bel deze week</b></div></div></article></div>
+      <p><a class="link" href="use-cases.html">Bekijk alle toepassingen</a></p>
+    </div>
+  </section>
+  <section class="section" id="beforeafter" aria-labelledby="ba-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="ba-h">Voor en na Moiz AI</h2></div>
+      <p class="t-lead">Hetzelfde bedrijf, dezelfde mensen. Maar het werk gaat anders.</p>
+      <div class="grid">
+        <article class="card span-6 ba ba--before"><h3>Voor</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="oa-row"><span>Order per mail</span><b class="bad">Met de hand ingetypt</b></div><div class="oa-row"><span>Prijs in ERP en webshop</span><b class="bad">Verschilt</b></div><div class="oa-row"><span>Klant in drie systemen</span><b class="bad">Drie versies</b></div><div class="oa-row"><span>Klacht in de inbox</span><b class="bad">Ligt dagen te wachten</b></div></div></article>
+        <article class="card span-6 ba ba--after"><h3>Na</h3><div class="ui ui-panel ui-orderapp" aria-hidden="true"><div class="oa-row"><span>Order per mail</span><b class="good">Door AI aangemaakt</b></div><div class="oa-row"><span>Prijs in ERP en webshop</span><b class="good">Overal gelijk</b></div><div class="oa-row"><span>Klant in drie systemen</span><b class="good">Eén record</b></div><div class="oa-row"><span>Klacht in de inbox</span><b class="good">Antwoord klaar ter goedkeuring</b></div></div></article>
       </div>
     </div>
   </section>
@@ -302,6 +337,24 @@
       </div>
     </div>
   </section>
+  <section class="section" id="cost" aria-labelledby="cost-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="cost-h">Eén vast bedrag in plaats van losse kosten</h2></div>
+      <p class="t-lead">Zonder Moiz AI betaal je op meerdere plekken. Met Moiz AI betaal je één bedrag per maand voor het geheel.</p>
+      <div class="grid">
+        <article class="card span-6"><h3>Normaal betaal je voor</h3><ul class="pts"><li>Losse software met een licentie per gebruiker</li><li>Medewerkers die uren kwijt zijn aan invoerwerk</li><li>Fouten die achteraf gecorrigeerd moeten worden</li><li>Externe partijen voor koppelingen en maatwerk</li></ul></article>
+        <article class="card span-6"><h3>Met Moiz AI betaal je</h3><p class="t-stat">&euro;1.500 per maand</p><p class="t-small muted">met Pro, voor het geheel: data, flows, agents, apps en dashboards, met onbeperkt aantal gebruikers.</p><ul class="pts"><li>Je bespaart tijd, want AI doet het routinewerk</li><li>Je medewerkers werken efficiënter aan werk dat ertoe doet</li><li>Je maakt minder fouten, want alles komt uit dezelfde data</li></ul><a class="link" href="pricing.html">Bekijk de pakketten</a></article>
+      </div>
+    </div>
+  </section>
+  <!-- Vul hier klantnamen in en haal het hidden-attribuut weg. -->
+  <section class="section ground-surface" id="clients" aria-labelledby="clients-h" hidden>
+    <div class="wrap">
+      <div class="section-head"><h2 id="clients-h">Bedrijven die we hebben geholpen</h2></div>
+      <p class="t-lead">Ons trackrecord, in de woorden van onze klanten.</p>
+      <div class="grid"><div class="card span-3 clslot"><p class="t-small muted">[Bedrijfsnaam]</p></div><div class="card span-3 clslot"><p class="t-small muted">[Bedrijfsnaam]</p></div><div class="card span-3 clslot"><p class="t-small muted">[Bedrijfsnaam]</p></div><div class="card span-3 clslot"><p class="t-small muted">[Bedrijfsnaam]</p></div></div>
+    </div>
+  </section>
   <section class="section" id="plans" aria-labelledby="plans-h">
     <div class="wrap">
       <div class="section-head"><h2 id="plans-h">Drie pakketten, onbeperkt aantal gebruikers bij betaalde pakketten.</h2></div>
@@ -347,7 +400,7 @@
           <p class="footer__lede">AI-flows en agents, gebouwd op data die over je systemen is afgestemd.</p>
         </div>
         <div class="span-3 start-7 footer__col"><h3>Platform</h3><ul><li><a href="platform.html#data">Productdata (PIM)</a></li><li><a href="platform.html#crm">Klantdata (CRM)</a></li><li><a href="platform.html#dam">Bestanden (DAM)</a></li><li><a href="platform.html#flows">AI-flows</a></li><li><a href="platform.html#apps">Maatwerk-apps</a></li><li><a href="platform.html#dashboards">Dashboards</a></li></ul></div>
-        <div class="span-3 footer__col"><h3>Bedrijf</h3><ul><li><a href="use-cases.html">Toepassingen</a></li><li><a href="pricing.html">Prijzen</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Bedrijf</h3><ul><li><a href="about.html">Wat is Moiz AI</a></li><li><a href="use-cases.html">Toepassingen</a></li><li><a href="pricing.html">Prijzen</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:info@moiz-ai.nl">info@moiz-ai.nl</a></li></ul></div>
       </div>
       <div class="footer__legal">
         <span>&copy; <span id="year">2026</span> Moiz AI</span>
